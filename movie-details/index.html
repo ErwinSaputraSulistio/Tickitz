@@ -79,11 +79,8 @@
          <div class="showtimesAndTickets container-fluid">
             <h1 style="font-size: 2vw; font-weight: 700;">Showtimes and Tickets</h1>
             <div class="twoButtons">
-               <div class="hoverThis btn-group">
-                  <button type="button" class="btnLocation btn" style="background: #EFF0F6; width: 15vw;"><img src="files/calendar.png" style="height: 1vw; margin-right: 10%; width: 1vw;">21/07/20</button>
-                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #EFF0F6;">
-                  <span class="sr-only"></span>
-                  </button>
+               <div class="hoverThis calendarBtn btn-group">
+                  <img src="files/calendar.png" style="height: 1vw; margin: 0 12% 0 7%; width: 1vw;"><input class="calendarInput" type="text" placeholder="Set a date" onfocus="(this.type='date')">
                </div>
                <div class="btn-group" style="margin-left: 5%;">
                   <button type="button" class="hoverThis btnLocation locationDropdown btn" style="background: #EFF0F6; padding: 5%; width: 15vw;"><img src="files/location.png" style="height: 1vw; margin-right: 10%; width: 1vw;">Location</button>
@@ -401,10 +398,9 @@
       <div style="align-items: center; display: flex; flex-direction:column; background: #F5F6F8; height: 1130px; padding: 10%;">
          <p style="font-family: 'Mulish'; font-size: 18px; font-weight: 700; letter-spacing: 0.75px;">Showtimes and Tickets</p>
          <div class="btn-group" style="margin-top: 10%;">
-            <button type="button" class="btnLocation calendarDropdownMobile btn" style="background: #EFF0F6; font-family:'Mulish'; padding: 5%; width: 222px;"><img src="files/calendar.png" style="float: left; height: 18px; margin-right: 10%; width: 18px;">Set a date</button>
-            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #EFF0F6;">
-            <span class="sr-only"></span>
-            </button>
+            <div class="hoverThis calendarBtn btn-group">
+                  <img src="files/calendar.png" style="height: 18px; margin-right: 48px; width: 18px;"><input class="calendarInput" type="text" placeholder="Set a date" onfocus="(this.type='date')" style="width: 100%;">
+               </div>
          </div>
          <div class="btn-group" style="margin-top: 3%;">
             <button type="button" class="btnLocation locationDropdownMobile btn" style="background: #EFF0F6; font-family:'Mulish'; padding: 5%; width: 222px;"><img src="files/location.png" style="float: left; height: 18px; margin-right: 10%; width: 18px;">Set a location</button>

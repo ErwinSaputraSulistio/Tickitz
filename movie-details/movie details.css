@@ -129,6 +129,9 @@ footer{
 .moreInfo {display: flex; flex-direction: row;}
 .rowOne, .rowTwo {display: flex; flex-direction: column;}
 .showtimesAndTickets {background: #F5F6F8; font-family: "Mulish"}
+.calendarBtn {align-items: center; background: #EFF0F6; display: flex; flex-direction: row;}
+.calendarInput {background: transparent; border: none;}
+.calendarInput:focus {outline: none;}
 
 /* MOBILE */
 @media (max-width: 1000px){
@@ -146,6 +149,7 @@ footer{
    .movieSynopsis {padding: 5% 10%;}
    .synopsis {font-size: 16px; font-weight: 600; margin: 3.3% 0;}
    .synopsisText {font-size: 12px; line-height: 32px; letter-spacing: 0.75px;}
+   .calendarBtn {padding: 5% 2% 5% 5%; width: 248px;}
    .title {margin-top: 5%; text-align: center;}
    .moreInfo {padding-left: 10%;}
    .bookTime {color: #A0A3BD; font-family:"Mulish"; font-size: 12px; margin: 0 5.5px;}
@@ -185,6 +189,8 @@ footer{
       padding: 5%;
    }
    .twoButtons {display: flex; flex-direction: row; justify-content: center; margin: 2% 0;}
+   .calendarBtn {width: 18vw;}
+   .calendarInput {width: 11.5vw;}
    .locationSelect li:hover {cursor: pointer; opacity: 0.5;}
    .btnLocation {align-items: center; display: flex; flex-direction: row;}
    .bookTime {color: #A0A3BD; font-family:"Mulish"; font-size: 0.8vw; justify-content: space-between;}
