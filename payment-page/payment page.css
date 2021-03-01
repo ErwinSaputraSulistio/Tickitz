@@ -1,0 +1,393 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Mulish");
+a:link {text-decoration: none;}
+a {color: black;}
+a:hover {opacity: 0.5;}
+p {margin: 0; padding: 0;}
+body {animation: showOpacity 1s;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@keyframes showOpacity{from{opacity: 0;} to{opacity: 1;}}
+#mobile{display: none;}
+.navHome{
+   align-items: center;
+   background-color: white;
+   display: flex;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+.navGroup{
+   align-items: center;
+   display: inline-flex;
+   font-family: "Mulish";
+   font-size: 0.9vw;
+   justify-content: space-evenly;
+   margin-left: 10%;
+   width: 50%;
+}
+.navBtn{color: black;}
+.signInBtn{
+   background-color: #5F2EEA;
+   border-radius: 5px;
+   color: white;
+   height: 2.2vw;
+   padding: 2%;
+   text-align: center;
+   width: 6.6vw;
+}
+.signInBtn:hover {color:white; opacity: 0.5;}
+header{
+   display: flex;
+   flex-direction: row;
+   height: 50vw;
+   justify-content: center;
+   padding: 5% 0;
+   width: 100%;
+}
+footer{
+   color: #6E7191;
+   display: flex;
+   flex-direction: row;
+   font-family: "Mulish";
+   font-size: 1vw;
+   letter-spacing: 0.05vw;
+   padding: 5% 5% 0 5%;
+}
+.footerTextDesktop {display: flex; flex-direction: column; margin-left: 13%;}
+.footerTextDesktop p {font-size: 0.8vw;margin: 0.33vw 0;}
+.footerTextDesktop img {margin: 5% 0;}
+.followUsFlex {display: flex; flex-direction: row; margin: 2% 0; width: 10vw;}
+
+/* MOBILE - NAVBAR */
+.navbarMobile{
+   background-color: white;
+   padding-top: 1%;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+.topNavMobile {background-color: white; padding: 7%;}
+.btnShowNav:hover {cursor: pointer; opacity: 0.5;}
+.btmBorder {border-bottom: 0.1vw solid #DEDEDE;}
+.searchNavMobile{
+   border: 0.1vw solid #DEDEDE; 
+   border-radius: 1vw; 
+   padding: 1%; 
+   margin: 5% 5% 10% 5%;}
+.inputSearch{
+   border: none; 
+   color: #A0A3BD; 
+   font-family: "Mulish";
+}
+.inputSearch:focus {color: black; outline: none;}
+.navButton{
+   border-bottom: 0.1vw solid #DEDEDE;
+   font-family:"Mulish";
+   text-align: center; 
+   padding: 5%;
+}
+.navLocBtn:focus {box-shadow: none;}
+.navButton:hover {background-color: #DEDEDE; cursor: pointer;}
+.allRightsReserved {padding: 15% 5% 10% 5%; text-align: center;}
+
+/* MOBILE - FOOTER */
+.footer{
+   display: flex;
+   flex-direction: column;
+   height: 700px;
+   padding: 15% 7% 7% 7%;
+   width: 350px;
+}
+.footerText{
+   color: #6E7191;
+   font-family: "Mulish";
+   font-size: 14px;
+   margin: 5% 0;
+}
+.footerRowText{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 5% 0;
+}
+.ourSponsor{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 3% 0 11% 0;
+}
+.followUsLogo{
+   height: 18px;
+   margin: 3% 6%;
+   width: 18px;
+}
+
+/* ORDER PAGE */
+
+
+
+/* MOBILE */
+@media (max-width: 1000px){
+   #mobile {display: block;}
+   #desktop {display: none;}
+   .orderPage {background: #F5F6F8; height: auto; padding: 24px;}
+   .seatPosition {
+      align-items: center; 
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+      width: 100%;
+   }
+   .textOrder {font-family: "Mulish"; font-weight: 600;}
+   .redLineBorder{
+      background: #ED2E7E; 
+      border-radius: 3px; 
+      height: 1px; 
+      margin-top: 8px;
+      width: 133px;
+   }
+   .rowSeatingKey{
+      align-items: center; 
+      display: flex; 
+      flex-direction: row;
+      width: 100%;
+   }
+   .fontSeatingKey{
+      color: #4E4B66; 
+      font-family: 'Mulish'; 
+      font-size: 13px; 
+      margin-left: 3%; 
+      margin-right: 7%;
+   }
+   .btnBottomOrderMobile{
+      background-color: #5F2EEA; 
+      box-shadow: 0.1vw 0.3vw 1vw #b79cfc; 
+      border-radius: 4px;
+      color: white;
+      display: block;
+      text-align: center;
+      margin: 56px 0;
+      padding: 11px 0;
+      width: 100%;
+   }
+   .borderForDropdown {
+      border: 0.5px solid #DEDEDE;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 88px;
+      padding: 16px;
+      width: 100%;
+   }
+   .addNewSeat {
+      border: 1px solid #5F2EEA;
+      border-radius: 4px;
+      color: #5F2EEA;
+      display: block;
+      margin-top: 16px;
+      padding: 11px 0;
+      text-align: center;
+      width: 100%;
+   }
+   .btnBottomOrderMobile, .addNewSeat {
+      font-family: "Mulish";
+      font-size: 16px;
+      letter-spacing: 0.75px;
+   }
+   .btnSeat {
+      align-items: center; 
+      background: #EFF0F6;
+      border-radius: 8px;
+      display: flex; 
+      font-family: "Mulish";
+      font-size: 16px;
+      flex-direction: row; 
+      height: 56px; 
+      justify-content:space-between; 
+      width: 115px;
+   }
+   .btnPayment {
+      align-items: center;
+      border: 0.1vw solid #DEDEDE; 
+      border-radius: 4px; 
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height:28px; 
+      text-align: center; 
+      width: 72px;}
+   .btnPayment:hover {opacity: 0.5;}
+   .imgPay {height: 22px; width: 68px;}
+   .lineBreaks {
+      width: 100%; 
+      text-align: center; 
+      border-bottom: 0.5px solid #DEDEDE; 
+      line-height: 0.1vw;
+      margin: 30px 0;
+   } 
+   .lineBreaks span { 
+      background: white;
+      color: #AAAAAA;
+      font-family: "Mulish";
+      font-size: 14px;
+      padding: 0 36px; 
+   }
+   .labelInput{color: #4E4B66; font-family: "Mulish"; font-size: 14px; margin: 0;}
+   .borderInput{
+      border: 0.1vw solid #DEDEDE;
+      border-radius: 0.7vw;
+      height: 48px;
+      margin-top: 2.5%;
+      margin-bottom: 10%;
+      padding: 3.3% 6.6%;
+      width: 100%;
+   }
+   .input{
+      border: none;
+      color: #A0A3BD;
+      font-family: "Mulish";
+      font-size: 14px;
+      height: 32px;
+      position: absolute;
+      width: auto;
+   }
+   .input:focus{color: black; outline: none;}
+   .input:invalid{box-shadow:none;}
+}
+
+/* DESKTOP */
+@media (min-width: 1001px){
+   .textOrder {
+      font-family: "Mulish"; 
+      font-size: 1.5vw; 
+      font-weight: 700; 
+      letter-spacing: 0.25px; 
+      margin: 1.5vw 0;
+   }
+   .flexTextPayment {
+      border-bottom: 0.1vw solid #E6E6E6;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 1.5vw;
+      padding-bottom: 1.5vw;
+   }
+   .flexTextPayment p {
+      font-family: "Mulish";
+      font-size: 1vw;
+      letter-spacing: 0.25px;
+   }
+   .btnPayment {border: 0.1vw solid #DEDEDE; border-radius: 0.5vw; height:4vw; text-align: center; width: 13vw;}
+   .btnPayment:hover {opacity: 0.5;}
+   .imgPay {height: 3.5vw; width: 10.5vw;}
+   .lineBreaks {
+      width: 100%; 
+      text-align: center; 
+      border-bottom: 1px solid #DEDEDE; 
+      line-height: 0.1vw;
+      margin-top: 5%;
+   } 
+   .lineBreaks span { 
+      background: white;
+      color: #AAAAAA;
+      font-family: "Inter",sans-serif;
+      font-size: 1vw;
+      padding: 0 2.5vw; 
+   }
+   .changeMovie {
+      background: #EFF0F6; 
+      border-radius: 0.5vw; 
+      color:#5F2EEA; 
+      font-family: "Mulish"; 
+      font-size: 0.8vw; 
+      font-weight: 700; 
+      letter-spacing: 0.75px; 
+      padding: 1% 3%;
+      text-decoration: none;
+   }
+   .orderInfo {
+      background: white; 
+      border-radius: 1.5vw; 
+      display: flex; 
+      flex-direction: column; 
+      height: auto;
+      width: 100%;
+   }
+   .hoverShadow:hover {box-shadow: 0px 8px 16px rgba(186, 186, 186, 0.24);}
+   .cinemaInfo {
+      display: flex; 
+      flex-direction: column;
+      height: auto; 
+      justify-content: space-between; 
+      padding: 10%;
+   }
+   .labelInput{color: #4E4B66; font-family: "Mulish"; font-size: 0.8vw; margin: 0;}
+   .borderInput{
+      border: 0.1vw solid #DEDEDE;
+      border-radius: 0.7vw;
+      height: 3vw;
+      margin-top: 2.5%;
+      margin-bottom: 10%;
+      padding: 3.3% 6.6%;
+      width: auto;
+   }
+   .input{
+      border: none;
+      color: #A0A3BD;
+      font-family: "Mulish";
+      font-size: 0.8vw;
+      height: 1.5vw;
+      position: absolute;
+      width: 15%;
+   }
+   .input:focus{color: black; outline: none;}
+   .input:invalid{box-shadow:none;}
+   .titleCinema {
+      align-items: center; 
+      display: flex; 
+      flex-direction: column;
+      width: 100%;
+   }
+   .totalPayment {
+      align-items: center; 
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      padding: 5%; 
+      width: 100%;
+   }
+   .insideOrderInfo {
+      display: flex; 
+      flex-direction: row; 
+      justify-content:space-between; 
+      padding-top: 5%; 
+      width: 100%;
+   }
+   .textInsideOrderInfo {font-family: "Mulish"; font-size: 0.8vw;}
+   .greyColor {color: #6B6B6B;}
+   .btnBottomOrder {
+      border-radius: 0.3vw;
+      font-family: "Mulish";
+      font-size: 1.2vw;
+      padding: 1% 0;
+      text-align: center;
+      width: 22vw;
+   }
+   .seatPosition {
+      display: flex; 
+      flex: row; 
+      justify-content: space-between; 
+      margin: auto; 
+      width: 100%;
+   }
+}

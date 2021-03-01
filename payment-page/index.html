@@ -1,0 +1,307 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <link rel="stylesheet" href="payment page.css">
+   <title>Tickitz - Payment Page</title>
+</head>
+<body>
+   <!-- DESKTOP -->
+   <div id="desktop">
+      <div class="navHome">
+         <div class="col-md-6" style="margin-left: 5%; padding: 1%;">
+            <img src="files/tickitz.png" style="width: 6vw;">
+            <div class="navGroup">
+               <a class="navBtn" href="">Movies</a>
+               <a class="navBtn" href="">Cinemas</a>
+               <a class="navBtn" href="">Buy Ticket</a>
+            </div>
+         </div>
+         <div class="col-md-3 offset-md-2">
+            <div class="navGroup" style="width: 100%;">
+               <div class="dropdown">
+                  <button class="navBtn navLocBtn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 0.9vw; height: 3.5vw;">
+                    Location
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Jabodetabek</a>
+                    <a class="dropdown-item" href="#">Other</a>
+                  </div>
+               </div>
+               <img src="files/search_logo.png" style="height: 1vw; width: 1vw; filter: brightness(50%)">
+               <img src="files/profile.png" style="width: 2.2vw">
+            </div>
+         </div>
+      </div>
+      <div class="orderPage container-fluid" style="background: #F5F6F8; display: flex; flex-direction: row; justify-content: space-between; height: auto; padding: 2% 6%;">
+         <div class="rowOne" style="display: flex; flex-direction: column; height: 100%; width: 72%;">
+            <p class="textOrder">Payment Info</p>
+            <div class="hoverShadow orderInfo" style="margin-bottom: 1.5vw; padding: 2.5vw;">
+               <div class="flexTextPayment" style="margin: 0;">
+                  <p style="color: #6B6B6B;">Date & time</p>
+                  <p>Tuesday, 07 July 2020 at 02:00pm</p>
+               </div>
+               <div class="flexTextPayment">
+                  <p style="color: #6B6B6B;">Movie title</p>
+                  <p>Spider-Man : Homecoming</p>
+               </div>
+               <div class="flexTextPayment">
+                  <p style="color: #6B6B6B;">Cinema name</p>
+                  <p>CineOne21 Cinema</p>
+               </div>
+               <div class="flexTextPayment">
+                  <p style="color: #6B6B6B;">Number of tickets</p>
+                  <p>3 pieces</p>
+               </div>
+               <div class="flexTextPayment" style="border: none; padding: 0;">
+                  <p style="color: #6B6B6B;">Total payment</p>
+                  <p style="font-weight: 700;">$30.00</p>
+               </div>
+            </div>
+            <p class="textOrder">Choose a Payment Method</p>
+            <div class="hoverShadow orderInfo" style="height: auto; padding: 2.5vw;">
+               <div style="display: flex; flex-direction: column; justify-content: space-between; height: 10vw; width: 100%;">
+                  <div style="display: flex; flex-direction: row; justify-content:space-between; width: 100%;">
+                     <a class="btnPayment" href=""><img class="imgPay" src="files/payment/gpay.png"></a>
+                     <a class="btnPayment" href=""><img class="imgPay" src="files/payment/visa.png"></a>
+                     <a class="btnPayment" href=""><img class="imgPay" src="files/payment/gopay.png"></a>
+                     <a class="btnPayment" href=""><img class="imgPay" src="files/payment/paypal.png"></a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; justify-content:space-between; width: 100%;">
+                     <a class="btnPayment" href=""><img class="imgPay" src="files/payment/dana.png"></a>
+                     <a class="btnPayment" href=""><img class="imgPay" src="files/payment/bca.png"></a>
+                     <a class="btnPayment" href=""><img class="imgPay" src="files/payment/bri.png"></a>
+                     <a class="btnPayment" href=""><img class="imgPay" src="files/payment/ovo.png"></a>
+                  </div>
+               </div>
+               <p class="lineBreaks"><span>or</span></p>
+               <div style="text-align: center; font-family: 'Mulish'; font-size: 1.2vw; letter-spacing: 0.75px; margin: 2.5vw 0 1.5vw 0; width: 100%;">
+                  <p style="color: #6E7191;">Pay via cash. <a href="" style="color: #5F2EEA;">See how it work</a></p>
+               </div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 5% 0 7% 0; width: 100%;">
+               <a class="btnBottomOrder" href="" style="border: 0.1vw solid #5F2EEA; color: #5F2EEA;">Previous step</a>
+               <a class="btnBottomOrder" href="" style="background-color: #5F2EEA; box-shadow: 0.1vw 0.3vw 1vw #b79cfc; color: white;">Pay your order</a>
+            </div>
+         </div>
+         <div class="rowTwo" style="display: flex; flex-direction: column; height: 100%; width: 26%;">
+            <p class="textOrder">Personal Info</p>
+            <div class="hoverShadow orderInfo">
+               <div class="cinemaInfo">
+                  <form style="margin: 0;">
+                     <label class="labelInput" for="yourName">Full Name</label>
+                     <div class="borderInput">
+                        <input class="input" type="text" id="yourName" placeholder="Write your name">
+                     </div>
+                     <label class="labelInput" for="email">Email</label>
+                     <div class="borderInput">
+                        <input class="input" type="email" id="yourEmail" placeholder="Write your email">
+                     </div>
+                     <label class="labelInput" for="phoneNumber">Phone number</label>
+                     <div class="borderInput">
+                        <input class="input" type="number" id="firstNumber" placeholder="+62" style="border-right: 0.1vw solid #DEDEDE; width: 2.5%;">
+                        <input class="input" type="number" id="lastNumber" placeholder="Write your phone number" style="margin-left: 3.5%; width: 10%;">
+                     </div>
+                  </form>
+                  <div style="align-items: center; background: rgba(244, 183, 64, 0.3); border-radius: 0.7vw; display: flex; flex-direction: row; height: 3vw; width: 100%;">
+                     <img src="files/error.png" style="height: 1.5vw; margin: 0 8%; width: 1.7vw;">
+                     <p style="color: #4E4B66; font-family: 'Mulish'; font-size: 0.8vw;">Fill your data correctly.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <footer style="height: auto; margin: auto; width: 80%;">
+         <div style="display: flex; flex-direction: column;">
+            <img src="files/tickitz.png" style="height: 3vw; margin-bottom: 15%; width: 12vw">
+            <div style="margin-bottom: 1%;">Stop waiting in line. Buy tickets</div>
+            <div>conveniently, watch movies quietly.</div>
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Explore</p>
+            <p>Cinemas</p>
+            <p>Movies List</p>
+            <p>My Ticket</p>
+            <p>Notification</p>
+            <p></p>
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Our Sponsor</p>
+            <img src="files/footer/ebu.png" style="height: 2.5vw; width: 7.5vw;">
+            <img src="files/footer/cineone.png" style="height: 2vw; width: 9vw;">
+            <img src="files/footer/hiflix.png" style="height: 1.5vw; width: 4.5vw;">
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Follow Us</p>
+            <div class="followUsFlex">
+               <img src="files/footer/facebook.png" style="height: 1.3vw; width: 1vw;">
+               <p style="margin-left: 1vw;">Tickitz Cinema ID</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/instagram.png" style="height: 1vw; width: 1vw;">
+               <p style="margin-left: 1vw;">@tickitz.id</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/twitter.png" style="height: 0.9vw; width: 1vw;">
+               <p style="margin-left: 1vw;">@tickitz.id</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/youtube.png" style="height: 0.7vw; width: 1vw;">
+               <p style="margin-left: 1vw;">Tickitz Cinema ID</p>
+            </div>
+         </div>
+      </footer>
+      <div style="color: #4E4B66; font-family: 'Mulish'; font-size: 0.8vw; margin: 3%; text-align: center;">&#169; 2020 Tickitz. All Rights Reserved.</div>
+   </div>
+
+   <!-- MOBILE -->
+   <div id="mobile" style="height: auto; overflow: visible;">
+      <div class="navbarMobile">
+         <div class="topNavMobile">
+            <img src="files/tickitz.png" style="height: 5vw; width: 20vw;">
+            <img class="btnShowNav" src="files/navMobile.png" style="height: 5vw; float: right; width: 5vw;" onclick="showNavMobile();">
+         </div>
+         <div id="insideNavMobile" style="display: none;">
+               <div style="border-bottom: 0.1vw solid #DEDEDE;">
+                  <div class="searchNavMobile">
+                     <img src="files/search_logo.png" style="filter: brightness(50%); margin: 3%; width: 5vw;">
+                     <input class="inputSearch" type="text" placeholder="Search ...">
+                  </div>
+               </div>
+               <div class="navButton" onclick="showLocation()">
+                  <a class="navShowLocation">Location<img src="files/arrow.png" style="margin-left: 3%; width: 3vw;"></a>
+               </div>
+            <div id="insideLocation" style="display: none;">
+               <div style="display: flex; justify-content:space-evenly;">
+                  <a class="navButton" href="" style="border-right: 0.1vw solid #DEDEDE; width: 50%;">Jabodetabek</a>
+                  <a class="navButton" href="" style="width: 50%;">Other</a>
+               </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+               <a class="navButton" href="">Movies</a>
+               <a class="navButton" href="">Cinemas</a>
+               <a class="navButton" href="">Buy Ticket</a>
+            </div>
+            <div class="allRightsReserved">&#169; 2020 Tickitz. All Rights Reserved.</div>
+         </div>
+      </div>
+      <div class="orderPage">
+         <p class="textOrder" style="margin: 3% 0 16px 0;">Payment Method</p>
+         <div style="background: white; height: auto; border-radius: 8px; padding: 32px;">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; height: auto; width: 100%;">
+               <div style="display: flex; flex-direction: row; justify-content:space-between; margin-bottom: 16px; width: 100%;">
+                  <a class="btnPayment" href=""><img class="imgPay" src="files/payment/gpay.png"></a>
+                  <a class="btnPayment" href=""><img class="imgPay" src="files/payment/visa.png"></a>
+                  <a class="btnPayment" href=""><img class="imgPay" src="files/payment/gopay.png"></a>
+               </div>
+               <div style="display: flex; flex-direction: row; justify-content:space-between; width: 100%;">
+                  <a class="btnPayment" href=""><img class="imgPay" src="files/payment/paypal.png"></a>
+                  <a class="btnPayment" href=""><img class="imgPay" src="files/payment/ovo.png"></a>
+                  <a class="btnPayment" href=""><img class="imgPay" src="files/payment/dana.png"></a>
+               </div>
+            </div>
+            <p class="lineBreaks"><span>or</span></p>
+            <div style="text-align: center; font-family: 'Mulish'; font-size: 14px; letter-spacing: 0.75px; width: 100%;">
+               <p style="color: #6E7191;">Pay via cash. <a href="" style="color: #5F2EEA;">See how it work</a></p>
+            </div>
+         </div>
+         <p class="textOrder" style="margin: 40px 0 16px 0;">Personal Info</p>
+         <div style="background: white; height: 424px; border-radius: 8px; padding: 32px;">
+            <div class="cinemaInfo">
+               <form style="margin: 0;">
+                  <label class="labelInput" for="yourName">Full Name</label>
+                  <div class="borderInput">
+                     <input class="input" type="text" id="yourName" placeholder="Write your name">
+                  </div>
+                  <label class="labelInput" for="email">Email</label>
+                  <div class="borderInput">
+                     <input class="input" type="email" id="yourEmail" placeholder="Write your email">
+                  </div>
+                  <label class="labelInput" for="phoneNumber">Phone number</label>
+                  <div class="borderInput" style="margin-bottom: 33px;">
+                     <input class="input" type="number" id="firstNumber" placeholder="+62" style="border-right: 0.1vw solid #DEDEDE; width: 50px;">
+                     <input class="input" type="number" id="lastNumber" placeholder="Phone number" style="margin-left: 70px; width: 120px;">
+                  </div>
+               </form>
+               <div style="align-items: center; background: rgba(244, 183, 64, 0.3); border-radius: 0.7vw; display: flex; flex-direction: row; height: 48px; width: 100%;">
+                  <img src="files/error.png" style="height: 22px; margin: 0 8%; width: 22px;">
+                  <p style="color: #4E4B66; font-family: 'Mulish'; font-size: 14px;">Fill your data correctly.</p>
+               </div>
+            </div>
+         </div>
+         <a class="btnBottomOrderMobile" href="">Pay your order</a>
+      </div>
+      <div class="footer">
+         <img src="files/tickitz.png" style="height: 30px; margin: 5% 0; width: 120px;">
+         <div class="footerText">
+            <p>Stop waiting in line. Buy tickets
+               <br>conveniently, watch movies quietly.
+            </p>
+            <p style="color: black; font-size: 16px; margin: 15% 0 5% 0;">Explore</p>
+            <div class="footerRowText">
+               <a href="" style="color: #6E7191;">Cinemas</a>
+               <a href="" style="color: #6E7191;">Movies list</a>
+               <a href="" style="color: #6E7191;">Notification</a>
+            </div>
+            <a href="" style="color: #6E7191;">My Ticket</a>
+            <p style="color: black; font-size: 16px; margin: 20% 0 5% 0;">Our Sponsor</p>
+            <div class="ourSponsor">
+               <img src="files/footer/ebu.png">
+               <img src="files/footer/cineone.png">
+               <img src="files/footer/hiflix.png">
+            </div>
+            <p style="color: black; font-size: 16px; margin: 5% 0;">Follow Us</p>
+            <div class="followUs">
+               <img style="margin: 3% 5% 3% 0; width: 12px;" class="followUsLogo" src="files/footer/facebook.png">
+               <img class="followUsLogo" src="files/footer/instagram.png">
+               <img class="followUsLogo" src="files/footer/twitter.png">
+               <img style="width: 22px;" class="followUsLogo" src="files/footer/youtube.png">
+            </div>
+            <p style="font-size: 12px; letter-spacing: 0.75px; margin: 25% 0;">&#169; 2020 Tickitz. All Rights Reserved.</p>
+         </div>
+      </div>
+   </div>
+   <script>
+      function showNavMobile(){
+         showState = document.getElementById("insideNavMobile")
+         if(showState.style.display == "none") {showState.style.display = "block"}
+         else {showState.style.display = "none"}
+      }
+      function showLocation(){
+         showState = document.getElementById("insideLocation")
+         if(showState.style.display == "none") {showState.style.display = "block"}
+         else{showState.style.display = "none"}
+      }
+      function alphabetSeatOne(val) {
+         takeFromClassName = document.getElementsByClassName("alphabetSeatOne");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function numberSeatOne(val) {
+         takeFromClassName = document.getElementsByClassName("numberSeatOne");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function alphabetSeatTwo(val) {
+         takeFromClassName = document.getElementsByClassName("alphabetSeatTwo");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function numberSeatTwo(val) {
+         takeFromClassName = document.getElementsByClassName("numberSeatTwo");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function alphabetSeatThree(val) {
+         takeFromClassName = document.getElementsByClassName("alphabetSeatThree");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function numberSeatThree(val) {
+         takeFromClassName = document.getElementsByClassName("numberSeatThree");
+         takeFromClassName[0].innerHTML = val;
+      }
+   </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
