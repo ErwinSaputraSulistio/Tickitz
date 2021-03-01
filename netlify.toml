@@ -1,0 +1,24 @@
+[[redirects]]
+  from = "/sign-in"
+  to = "/sign-in"
+  status = 301
+
+[[redirects]]
+  from = "/home-page"
+  to = "/home-page"
+  status = 301
+
+[[redirects]]
+  from = "/movie-details"
+  to = "/movie-details"
+  status = 301
+
+[[redirects]]
+  from = "/order-page"
+  to = "/order-page"
+  status = 301
+
+[[redirects]]
+  from = "/payment-page"
+  to = "/payment-page"
+  status = 301
