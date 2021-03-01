@@ -1,0 +1,332 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Mulish");
+a:link {text-decoration: none;}
+a {color: black;}
+p {margin: 0; padding: 0;}
+body {animation: showOpacity 1s;}
+@keyframes showOpacity{from{opacity: 0;} to{opacity: 1;}}
+#mobile{display: none;}
+@media screen and (max-width: 1000px){
+   #mobile{display: block;}
+   #desktop{display: none;}
+}
+.navHome{
+   align-items: center;
+   background-color: white;
+   display: flex;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+.navGroup{
+   align-items: center;
+   display: inline-flex;
+   font-family: "Mulish";
+   font-size: 0.9vw;
+   justify-content: space-evenly;
+   margin-left: 10%;
+   width: 50%;
+}
+.navBtn{color: black;}
+.navLocBtn:focus {box-shadow: none;}
+.signInBtn{
+   background-color: #5F2EEA;
+   border-radius: 5px;
+   color: white;
+   height: 2.2vw;
+   padding: 2%;
+   text-align: center;
+   width: 6.6vw;
+}
+.signInBtn:hover {color:white; opacity: 0.5;}
+.headerDesktop{
+   align-items: center;
+   display: flex;
+   height: 100%;
+   justify-content: space-between;
+   padding-bottom: 10%;
+}
+.headerText{
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding: 0 0 0 15%;
+}
+.text {font-family: "Mulish";margin: 0;}
+.headerDisplay {width: 50%;}
+.displayList{
+   align-items: center;
+   display: flex;
+   filter: brightness(70%);
+   justify-content: space-between;
+   padding: 15%;
+   width: 75%;
+}
+.display{
+   border-radius: 0.8vw; 
+   box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.3); 
+   height: 22vw;}
+.display-left {margin-top: 20%;}
+.display-right {margin-bottom: 20%;}
+.monthBtnDesktop{
+   align-items: center;
+   border: 0.1vw solid #5F2EEA;
+   border-radius: 0.3vw;
+   color: #5F2EEA;
+   display: flex;
+   font-family: "Mulish";
+   font-size: 0.8vw;
+   height: 2vw;
+   justify-content: center;
+   margin-right: 1%;
+   width: 7%;
+}
+.monthBtnDesktop:hover {opacity: 0.5;}
+.nowShowBtnDesktop {display: flex; flex-direction: column; text-align: center;}
+footer{
+   color: #6E7191;
+   display: flex;
+   flex-direction: row;
+   font-family: "Mulish";
+   font-size: 1vw;
+   letter-spacing: 0.05vw;
+   padding: 5% 5% 0 5%;
+}
+.footerTextDesktop {display: flex; flex-direction: column; margin-left: 13%;}
+.footerTextDesktop p {font-size: 0.8vw;margin: 0.33vw 0;}
+.footerTextDesktop img {margin: 5% 0;}
+.followUsFlex {display: flex; flex-direction: row; margin: 2% 0; width: 10vw;}
+
+/* MOBILE - NAVBAR */
+.navbarMobile{
+   background-color: white;
+   padding-top: 1%;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+.topNavMobile {background-color: white; padding: 7%;}
+.btnShowNav:hover {cursor: pointer; opacity: 0.5;}
+.btmBorder {border-bottom: 0.1vw solid #DEDEDE;}
+.searchNavMobile{
+   border: 0.1vw solid #DEDEDE; 
+   border-radius: 1vw; 
+   padding: 1%; 
+   margin: 5% 5% 10% 5%;}
+.inputSearch{
+   border: none; 
+   color: #A0A3BD; 
+   font-family: "Mulish";}
+.inputSearch:focus {color: black; outline: none;}
+.navButton{
+   border-bottom: 0.1vw solid #DEDEDE;
+   font-family:"Mulish";
+   text-align: center; 
+   padding: 5%;}
+.navButton:hover {background-color: #DEDEDE; cursor: pointer;}
+.allRightsReserved {padding: 15% 5% 10% 5%; text-align: center;}
+
+/* MOBILE - HEADER */
+.movieShow{
+   background-color: #FCFDFE;
+   height: auto;
+   padding-bottom: 33%;
+   width: 100%;
+}
+.displayMobile{
+   border-radius: 2vw; 
+   box-shadow: 2.5vw 2.5vw 5vw rgba(0, 0, 0, 0.3); 
+   height: 88vw;}
+.imgSizeDesktop{height: 13vw;}
+.titleGenreDesktop {font-family: "Mulish"; margin: 10%; text-align: center;}
+.nowShowBtnDesktop {display: flex; flex-direction: column; margin-top: 2vw; text-align: center;}
+
+/* MOBILE - NOW SHOWING */
+.nowShowing{
+   align-items: center;
+   background: #D6D8E7;
+   display: flex;
+   flex-direction: column;
+}
+.viewAll{
+   display: flex;
+   flex-direction: row;
+   font-family: "Mulish";
+   justify-content: space-between;
+   padding: 10% 5% 5% 5%;
+   width: 100%;
+}
+.viewBtn:hover{opacity: 0.5;}
+.scrollMovie {
+   background-color: transparent;
+   display: flex;
+   overflow: scroll;
+   margin-bottom: 15%;
+   padding: 5%;
+   white-space: nowrap;
+   width: 100%;
+}
+.previewDisplay {margin-right: 5%;}
+.movieDisplay {display: none; margin-right: 5%;}
+.moviePreview{
+   background: rgba(255, 255, 255, 0.2);
+   border: 1px solid #FFFFFF;
+   border-radius: 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2%;
+   height: 217px;
+   width: 154px;
+}
+.moviePreview:hover {cursor: pointer; opacity: 0.5;}
+.movieBorder{
+   background: white;
+   border: 0.1vw solid white;
+   border-radius: 6px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 367px;
+   padding: 2.2%;
+   width: 154px;
+}
+.movieBorder:hover {cursor:pointer; opacity: 0.8;}
+.imgSize {height: 185px; width: 122px;}
+.titleGenre {font-family: "Mulish"; margin: 3%; text-align: center;}
+.title{font-size: 14px;}
+.genre{color: #A0A3BD; font-size: 11px;}
+.nowShowBtn {display: flex; flex-direction: column; margin-top: 5vw; text-align: center;}
+.detailBtn {
+   border: 0.5px solid #5F2EEA;
+   border-radius: 4px;
+   color: #5F2EEA;
+   font-family: "Mulish";
+   font-size: 13px;
+   height: 25px;
+   line-height: 15px;
+   padding: 3%;
+   width: 122px;
+}
+.bookBtn{
+   background: #5F2EEA;
+   border-radius: 4px;
+   color: white;
+   font-family: "Mulish";
+   font-size: 13px;
+   height: 25px;
+   line-height: 15px;
+   margin-top: 7%;
+   padding: 3%;
+   width: 122px;  
+}
+.bookBtn:hover {color: white; opacity: 0.5;}
+/* MOBILE - UPCOMING MOVIES */
+.upcomingMovies{
+   align-items: center;
+   background: white;
+   display: flex;
+   flex-direction: column;
+}
+.monthBtn{
+   border: 1px solid #5F2EEA;
+   border-radius: 4px;
+   color: #5F2EEA;
+   font-family: "Mulish";
+   font-size: 14px;
+   font-weight: 600;
+   margin: 0 5% 5%;
+   padding: 10px 40px;
+}
+.monthBtn:focus, .monthBtnDesktop:focus{
+   background: #5F2EEA;
+   box-shadow: 0px 8px 30px rgba(95, 46, 234, 0.3);
+   color: white;
+}
+.upcomingMoviesBorder{
+   align-items: center;
+   background: white;
+   border: 0.5px solid #DEDEDE;
+   border-radius: 6px;
+   display: flex;
+   flex-direction: column;
+   height: 330px;
+   justify-content: center;
+   margin: 5%;
+   padding: 2.2%;
+   width: 154px;
+}
+.upcomingMoviesBorder:hover {opacity: 0.5;}
+.gapBetween{margin-right: 5%;}
+.joinMember{
+   align-items: center;
+   background: white;
+   border-radius: 8px;
+   box-shadow: 0px 8px 16px rgba(186, 186, 186, 0.15);
+   display: flex;
+   flex-direction: column;
+   height: 400px;
+   margin: auto;
+   margin-top: 5%;
+   padding: 5%;
+   width: 320px;
+}
+.borderInput{
+   border: 0.1vw solid #DEDEDE;
+   border-radius: 0.5vw;
+   margin-top: 2.5%;
+   margin-bottom: 5%;
+   padding: 3.3%;
+   height: 40px;
+   width: 260px;
+}
+.input{
+   border: none;
+   color: #A0A3BD;
+   font-family: "Mulish";
+   font-size: 12px;
+   height: 22px;
+   position: absolute;
+}
+.input:focus{color: black; outline: none;}
+.input:invalid{box-shadow:none;}
+.inputAndJoin{
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+/* MOBILE - FOOTER */
+.footer{
+   display: flex;
+   flex-direction: column;
+   height: 700px;
+   padding: 25% 7% 7% 7%;
+   width: 350px;
+}
+.footerText{
+   color: #6E7191;
+   font-family: "Mulish";
+   font-size: 14px;
+   margin: 5% 0;
+}
+.footerRowText{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 5% 0;
+}
+.ourSponsor{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 3% 0 11% 0;
+}
+.followUsLogo{
+   height: 18px;
+   margin: 3% 6%;
+   width: 18px;
+}

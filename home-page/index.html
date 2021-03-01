@@ -1,0 +1,754 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="home.css">
+   <title>Tickitz - Home Page</title>
+</head>
+<body>
+   <!-- DESKTOP -->
+   <div id="desktop">
+      <div class="navHome">
+         <div class="col-md-6 offset-md-1" style="padding: 1%;">
+            <img src="files/tickitz.png" style="width: 6vw;">
+            <div class="navGroup">
+               <a class="navBtn" href="">Movies</a>
+               <a class="navBtn" href="">Cinemas</a>
+               <a class="navBtn" href="">Buy Ticket</a>
+            </div>
+         </div>
+         <div class="col-md-3 offset-md-1">
+            <div class="navGroup" style="width: 100%;">
+               <div class="dropdown">
+                  <button class="navBtn navLocBtn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: white; font-size: 0.9vw; height: 3.5vw;">
+                    Location
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Jabodetabek</a>
+                    <a class="dropdown-item" href="#">Other</a>
+                  </div>
+               </div>
+               <img src="files/search_logo.png" style="height: 1vw; width: 1vw; filter: brightness(50%)">
+               <a class="SignInBtn" href="">Sign In</a>
+            </div>
+         </div>
+      </div>
+      <div class="headerDesktop container-fluid">
+         <div class="headerText">
+            <p class="text" style="color: #A0A3BD; font-size: 1.2vw; font-weight: 400;">Nearest Cinema, Newest Movie,</p>
+            <p class="text" style="color: #5F2EEA; font-size: 2.8vw; font-weight: 700;">Find out now!</p>
+         </div>
+         <div class="headerDisplay">
+            <div class="displaylist">
+               <img class="display display-left" src="files/header/display-left.png">
+               <img class="display display-center" src="files/header/display-center.png">
+               <img class="display display-right" src="files/header/display-right.png">
+            </div>
+         </div>
+      </div>
+      <main>
+         <div class="nowShowing" style="height: 35vw;">
+            <div class="viewAll" style="padding: 5% 7% 0 5%;">
+               <div style="align-items:center; display: flex; flex-direction: column; justify-content: center;">
+               <p style="color: #752EEA; font-size: 1.2vw; font-weight: 700; margin-bottom: 7%;">Now Showing</p>
+               <div style="border: 0.15vw solid #752EEA; width: 55%;"></div>
+               </div>
+               <a class="viewBtn" href="" style="color: #5F2EEA; font-size: 1vw;">view all</a>
+            </div>
+            <div style="background-color: transparent; display: flex; padding: 3% 7%; width: 100%;">
+               <div id="preview1Desktop" onclick="showMovie1Desktop()" style="margin-right: 3%;">
+                  <div class="moviePreview" style="width: 12vw; height: 16vw;">
+                     <img class="imgSizeDesktop" src="files/now_showing/spiderman.png">
+                  </div>
+               </div>
+               <div id="movie1Desktop" onclick="showMovie1Desktop()" style="display: none; margin-right: 3%;">
+                  <div class="movieBorder" style="width: 12vw; height: 28vw; box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);">
+                     <img class="imgSizeDesktop" src="files/now_showing/spiderman.png">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">Spider-Man : <br>Homecoming</p>
+                        <p class="genre" style="font-size: 0.7vw;">Action, Adventure, Sci-Fi</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                        <a class="bookBtn" href="">Book Now</a>
+                     </div>
+                  </div>
+               </div>
+               <div id="preview2Desktop" onclick="showMovie2Desktop()" style="margin-right: 3%;">
+                  <div class="moviePreview" style="width: 12vw; height: 16vw;">
+                     <img class="imgSizeDesktop" src="files/now_showing/lionking.png">
+                  </div>
+               </div>
+               <div id="movie2Desktop" onclick="showMovie2Desktop()" style="display: none; margin-right: 3%;">
+                  <div class="movieBorder" style="width: 12vw; height: 28vw; box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);">
+                     <img class="imgSizeDesktop" src="files/now_showing/lionking.png">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">The Lion King</p>
+                        <p class="genre" style="font-size: 0.7vw;">Animation, Adventure, Drama</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                        <a class="bookBtn" href="">Book Now</a>
+                     </div>
+                  </div>
+               </div>
+               <div id="preview3Desktop" onclick="showMovie3Desktop()" style="margin-right: 3%;">
+                  <div class="moviePreview" style="width: 12vw; height: 16vw;">
+                     <img class="imgSizeDesktop" src="files/now_showing/johnwick.png">
+                  </div>
+               </div>
+               <div id="movie3Desktop" onclick="showMovie3Desktop()" style="display: none; margin-right: 3%;">
+                  <div class="movieBorder" style="width: 12vw; height: 28vw; box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);">
+                     <img class="imgSizeDesktop" src="files/now_showing/johnwick.png">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">John Wick 3</p>
+                        <p class="genre" style="font-size: 0.7vw;">Action, Crime, Thriller</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                        <a class="bookBtn" href="">Book Now</a>
+                     </div>
+                  </div>
+               </div>
+               <div id="preview4Desktop" onclick="showMovie4Desktop()" style="margin-right: 3%;">
+                  <div class="moviePreview" style="width: 12vw; height: 16vw;">
+                     <img class="imgSizeDesktop" src="files/now_showing/zombiereddy.jpg">
+                  </div>
+               </div>
+               <div id="movie4Desktop" onclick="showMovie4Desktop()" style="display: none; margin-right: 3%;">
+                  <div class="movieBorder" style="width: 12vw; height: 28vw; box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);">
+                     <img class="imgSizeDesktop" src="files/now_showing/zombiereddy.jpg">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">Zombie Reddy</p>
+                        <p class="genre" style="font-size: 0.7vw;">Action, Comedy, Horror</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                        <a class="bookBtn" href="">Book Now</a>
+                     </div>
+                  </div>
+               </div>
+               <div id="preview5Desktop" onclick="showMovie5Desktop()" style="margin-right: 3%;">
+                  <div class="moviePreview" style="width: 12vw; height: 16vw;">
+                     <img class="imgSizeDesktop" src="files/now_showing/tomjerry.jpg" style="height: 13vw; width: 9vw;">
+                  </div>
+               </div>
+               <div id="movie5Desktop" onclick="showMovie5Desktop()" style="display: none; margin-right: 3%;">
+                  <div class="movieBorder" style="width: 12vw; height: 28vw; box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);">
+                     <img class="imgSizeDesktop" src="files/now_showing/tomjerry.jpg" style="height: 13vw; width: 9vw;">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">Tom & Jerry (2021)</p>
+                        <p class="genre" style="font-size: 0.7vw;">Animation, Adventure, Comedy</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                        <a class="bookBtn" href="">Book Now</a>
+                     </div>
+                  </div>
+               </div>
+               <div id="preview6Desktop" class="previewDisplay" onclick="showMovie6Desktop()">
+                  <div class="moviePreview" style="width: 12vw; height: 16vw;">
+                     <img class="imgSizeDesktop" src="files/now_showing/crisis.jpg">
+                  </div>
+               </div>
+               <div id="movie6Desktop" class="movieDisplay" onclick="showMovie6Desktop()">
+                  <div class="movieBorder" style="width: 12vw; height: 28vw; box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);">
+                     <img class="imgSizeDesktop" src="files/now_showing/crisis.jpg">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">Crisis</p>
+                        <p class="genre" style="font-size: 0.7vw;">Drama, Mystery, Thriller</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                        <a class="bookBtn" href="">Book Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="upcomingMovies">
+            <div class="viewAll" style="padding: 5% 7% 3% 5%;">
+               <p style="color: black; font-size: 1.2vw; font-weight: 700;">Upcoming Movies</p>
+               <a class="viewBtn" href="" style="color: #5F2EEA; font-size: 1vw;">view all</a>
+            </div>
+            <div style="display: flex; justify-content:space-evenly; width: 90%;">
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">September</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">October</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">November</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">December</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">January</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">February</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">March</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">April</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">May</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">June</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">July</a>
+               <a class="monthBtnDesktop" href="https://www.instagram.com/alegoplex.es" target="_blank">August</a>
+            </div>
+            <div style="align-items:center; background: transparent; display: flex; justify-content: space-evenly; padding: 5% 0% 1% 3%; width: 100%;">
+               <div>
+                  <div class="upcomingMoviesBorder" style="width: 13vw; height: 26vw;">
+                     <img class="imgSizeDesktop" src="files/upcoming_movies/blackwidow.png">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">Black Widow</p>
+                        <p class="genre" style="font-size: 0.7vw;">Action, Adventure, Sci-Fi</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="upcomingMoviesBorder" style="width: 13vw; height: 26vw;">
+                     <img class="imgSizeDesktop" src="files/upcoming_movies/thewitches.png">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">The Witches</p>
+                        <p class="genre" style="font-size: 0.7vw;">Adventure, Comedy, Family</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="upcomingMoviesBorder" style="width: 13vw; height: 26vw;">
+                     <img class="imgSizeDesktop" src="files/upcoming_movies/tenet.png">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">Tenet</p>
+                        <p class="genre" style="font-size: 0.7vw;">Action, Sci-Fi, Thriller</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="upcomingMoviesBorder" style="width: 13vw; height: 26vw;">
+                     <img class="imgSizeDesktop" src="files/upcoming_movies/venom2.jpg">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">Venom 2</p>
+                        <p class="genre" style="font-size: 0.7vw;">Action, Horror, Sci-Fi, Thriller</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="gapBetween">
+                  <div class="upcomingMoviesBorder" style="width: 13vw; height: 26vw;">
+                     <img class="imgSizeDesktop" src="files/upcoming_movies/caseclosed.jpg">
+                     <div class="titleGenreDesktop">
+                        <p class="title" style="font-size: 1vw; font-weight: 700;">Case Closed</p>
+                        <p class="genre" style="font-size: 0.7vw;">Animation, Mystery, Thriller</p>
+                     </div>
+                     <div class="nowShowBtnDesktop"> 
+                        <a class="detailBtn" href="">Details</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="joinMember" style="height: auto; margin-bottom: 7%; padding: 3%; width: 75%;">
+               <p style="color: #4E4B66; font-family: 'Mulish'; font-size: 1.3vw;">Be the vanguard of the</p>
+               <p style="color: #5F2EEA; font-family: 'Mulish'; font-size: 2.6vw; font-weight: 700; line-height: 1;">Moviegoers</p>
+               <div style="align-items:center; display: flex; flex-direction: row; margin-top: 5%;">
+                  <div class="borderInput" style="align-items: center; border-radius: 0.25vw; display: flex; height: 2.5vw; margin: 0; margin-right: 3%; width: 15vw;"><input class="input" type="email" id="email" placeholder="Type your email" style="font-size: 0.8vw; padding: 0; width: 10%;"></div>
+                  <a class="bookBtn" style="align-items: center; display: flex; font-size: 0.8vw; height: 2.5vw; margin: 0; justify-content: center; width: 6vw;" href="">Join Now</a>
+               </div>
+               <div style="color: #6E7191; font-family: 'Mulish'; font-size: 0.8vw; margin-top: 3%; text-align: center;">
+                  <p>By joining you as a Tickitz member,</p>
+                  <p style="line-height: 2;">we will always send you the latest updates via email.</p>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer style="height: auto; margin: auto; width: 80%;">
+         <div style="display: flex; flex-direction: column;">
+            <img src="files/tickitz.png" style="height: 3vw; margin-bottom: 15%; width: 12vw">
+            <div style="margin-bottom: 1%;">Stop waiting in line. Buy tickets</div>
+            <div>conveniently, watch movies quietly.</div>
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Explore</p>
+            <p>Cinemas</p>
+            <p>Movies List</p>
+            <p>My Ticket</p>
+            <p>Notification</p>
+            <p></p>
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Our Sponsor</p>
+            <img src="files/footer/ebu.png" style="height: 2.5vw; width: 7.5vw;">
+            <img src="files/footer/cineone.png" style="height: 2vw; width: 9vw;">
+            <img src="files/footer/hiflix.png" style="height: 1.5vw; width: 4.5vw;">
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Follow Us</p>
+            <div class="followUsFlex">
+               <img src="files/footer/facebook.png" style="height: 1.3vw; width: 1vw;">
+               <p style="margin-left: 1vw;">Tickitz Cinema ID</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/instagram.png" style="height: 1vw; width: 1vw;">
+               <p style="margin-left: 1vw;">@tickitz.id</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/twitter.png" style="height: 0.9vw; width: 1vw;">
+               <p style="margin-left: 1vw;">@tickitz.id</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/youtube.png" style="height: 0.7vw; width: 1vw;">
+               <p style="margin-left: 1vw;">Tickitz Cinema ID</p>
+            </div>
+         </div>
+      </footer>
+      <div style="color: #4E4B66; font-family: 'Mulish'; font-size: 0.8vw; margin: 3%; text-align: center;">&#169; 2020 Tickitz. All Rights Reserved.</div>
+   </div>
+
+   <!-- MOBILE -->
+   <div id="mobile" style="height: 2500px; overflow: visible;">
+      <div class="navbarMobile">
+         <div class="topNavMobile">
+            <img src="files/tickitz.png" style="height: 5vw; width: 20vw;">
+            <img class="btnShowNav" src="files/navMobile.png" style="height: 5vw; float: right; width: 5vw;" onclick="showNavMobile();">
+         </div>
+         <div id="insideNavMobile" style="display: none;">
+               <div style="border-bottom: 0.1vw solid #DEDEDE;">
+                  <div class="searchNavMobile">
+                     <img src="files/search_logo.png" style="filter: brightness(50%); margin: 3%; width: 5vw;">
+                     <input class="inputSearch" type="text" placeholder="Search ...">
+                  </div>
+               </div>
+               <div class="navButton" onclick="showLocation()">
+                  <a class="navShowLocation">Location<img src="files/arrow.png" style="margin-left: 3%; width: 3vw;"></a>
+               </div>
+            <div id="insideLocation" style="display: none;">
+               <div style="display: flex; justify-content:space-evenly;">
+                  <a class="navButton" href="" style="border-right: 0.1vw solid #DEDEDE; width: 50%;">Jabodetabek</a>
+                  <a class="navButton" href="" style="width: 50%;">Other</a>
+               </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+               <a class="navButton" href="">Movies</a>
+               <a class="navButton" href="">Cinemas</a>
+               <a class="navButton" href="">Buy Ticket</a>
+            </div>
+            <div class="allRightsReserved">&#169; 2020 Tickitz. All Rights Reserved.</div>
+         </div>
+      </div>
+      <div class="movieShow">
+         <div style="padding: 15% 7.5% 7.5% 7.5%;">
+            <p class="text" style="color: #A0A3BD; font-size: 3.5vw; font-weight: 400;">Nearest Cinema, Newest Movie,</p>
+            <p class="text" style="color: #5F2EEA; font-size: 9vw; font-weight: 700;">Find out now!</p>
+         </div>
+         <div class="headerDisplay" style="width: 100%;">
+            <div class="displaylist" style="padding: 5%; width: 100%;">
+               <img class="displayMobile display-left" src="files/header/display-left.png">
+               <img class="displayMobile display-center" src="files/header/display-center.png">
+               <img class="displayMobile display-right" src="files/header/display-right.png">
+            </div>
+         </div>
+      </div>
+      <div class="nowShowing">
+         <div class="viewAll">
+            <p style="color: #752EEA; font-weight: 700;">Now Showing</p>
+            <a class="viewBtn" href="" style="color: #5F2EEA;">view all</a>
+         </div>
+         <div class="scrollMovie">
+            <div id="preview1" class="previewDisplay" onclick="showMovie1()">
+               <div class="moviePreview">
+                  <img class="imgSize" src="files/now_showing/spiderman.png">
+               </div>
+            </div>
+            <div id="movie1" class="movieDisplay" onclick="showMovie1()">
+               <div class="movieBorder">
+                  <img class="imgSize" src="files/now_showing/spiderman.png">
+                  <div class="titleGenre">
+                     <p class="title">Spider-Man : H...</p>
+                     <p class="genre">Action, Adventure, <br>Sci-Fi</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                     <a class="bookBtn" href="">Book Now</a>
+                  </div>
+               </div>
+            </div>
+            <div id="preview2" class="previewDisplay" onclick="showMovie2()">
+               <div class="moviePreview">
+                  <img class="imgSize" src="files/now_showing/lionking.png">
+               </div>
+            </div>
+            <div id="movie2" class="movieDisplay" onclick="showMovie2()">
+               <div class="movieBorder">
+                  <img class="imgSize" src="files/now_showing/lionking.png">
+                  <div class="titleGenre">
+                     <p class="title">The Lion King</p>
+                     <p class="genre">Animation, Adventure, <br>Drama</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                     <a class="bookBtn" href="">Book Now</a>
+                  </div>
+               </div>
+            </div>
+            <div id="preview3" class="previewDisplay" onclick="showMovie3()">
+               <div class="moviePreview">
+                  <img class="imgSize" src="files/now_showing/johnwick.png">
+               </div>
+            </div>
+            <div id="movie3" class="movieDisplay" onclick="showMovie3()">
+               <div class="movieBorder">
+                  <img class="imgSize" src="files/now_showing/johnwick.png">
+                  <div class="titleGenre">
+                     <p class="title">John Wick 3</p>
+                     <p class="genre">Action, Crime, <br>Thriller</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                     <a class="bookBtn" href="">Book Now</a>
+                  </div>
+               </div>
+            </div>
+            <div id="preview4" class="previewDisplay" onclick="showMovie4()">
+               <div class="moviePreview">
+                  <img class="imgSize" src="files/now_showing/zombiereddy.jpg">
+               </div>
+            </div>
+            <div id="movie4" class="movieDisplay" onclick="showMovie4()">
+               <div class="movieBorder">
+                  <img class="imgSize" src="files/now_showing/zombiereddy.jpg">
+                  <div class="titleGenre">
+                     <p class="title">Zombie Reddy</p>
+                     <p class="genre">Action, Comedy, <br>Horror</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                     <a class="bookBtn" href="">Book Now</a>
+                  </div>
+               </div>
+            </div>
+            <div id="preview5" class="previewDisplay" onclick="showMovie5()">
+               <div class="moviePreview">
+                  <img class="imgSize" src="files/now_showing/tomjerry.jpg">
+               </div>
+            </div>
+            <div id="movie5" class="movieDisplay" onclick="showMovie5()">
+               <div class="movieBorder">
+                  <img class="imgSize" src="files/now_showing/tomjerry.jpg">
+                  <div class="titleGenre">
+                     <p class="title">Tom & Jerry (2021)</p>
+                     <p class="genre">Animation, Adventure, <br>Comedy</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                     <a class="bookBtn" href="">Book Now</a>
+                  </div>
+               </div>
+            </div>
+            <div id="preview6" class="previewDisplay" onclick="showMovie6()">
+               <div class="moviePreview">
+                  <img class="imgSize" src="files/now_showing/crisis.jpg">
+               </div>
+            </div>
+            <div id="movie6" class="movieDisplay" onclick="showMovie6()">
+               <div class="movieBorder">
+                  <img class="imgSize" src="files/now_showing/crisis.jpg">
+                  <div class="titleGenre">
+                     <p class="title">Crisis</p>
+                     <p class="genre">Drama, Mystery, <br>Thriller</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                     <a class="bookBtn" href="">Book Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="upcomingMovies" style="margin-top: 7%;">
+         <div class="viewAll">
+            <p style="color: black; font-weight: 700;">Upcoming Movies</p>
+            <a class="viewBtn" href="" style="color: #5F2EEA;">view all</a>
+         </div>
+         <div class="scrollMovie" style="margin-bottom: 1%;">
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">September</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">October</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">November</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">December</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">January</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">February</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">March</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">April</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">May</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">June</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">July</a>
+            <a class="monthBtn" href="https://www.instagram.com/alegoplex.es" target="_blank">August</a>
+         </div>
+         <div class="scrollMovie">
+            <div class="gapBetween">
+               <div class="upcomingMoviesBorder">
+                  <img class="imgSize" src="files/upcoming_movies/blackwidow.png">
+                  <div class="titleGenre">
+                     <p class="title">Black Widow</p>
+                     <p class="genre">Action, Adventure, <br>Sci-Fi</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                  </div>
+               </div>
+            </div>
+            <div class="gapBetween">
+               <div class="upcomingMoviesBorder">
+                  <img class="imgSize" src="files/upcoming_movies/thewitches.png">
+                  <div class="titleGenre">
+                     <p class="title">The Witches</p>
+                     <p class="genre">Adventure, Comedy, <br>Family</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                  </div>
+               </div>
+            </div>
+            <div class="gapBetween">
+               <div class="upcomingMoviesBorder">
+                  <img class="imgSize" src="files/upcoming_movies/tenet.png">
+                  <div class="titleGenre">
+                     <p class="title">Tenet</p>
+                     <p class="genre">Action, Sci-Fi, <br>Thriller</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                  </div>
+               </div>
+            </div>
+            <div class="gapBetween">
+               <div class="upcomingMoviesBorder">
+                  <img class="imgSize" src="files/upcoming_movies/venom2.jpg">
+                  <div class="titleGenre">
+                     <p class="title">Venom 2</p>
+                     <p class="genre">Action, Horror, <br>Sci-Fi, Thriller</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                  </div>
+               </div>
+            </div>
+            <div class="gapBetween">
+               <div class="upcomingMoviesBorder">
+                  <img class="imgSize" src="files/upcoming_movies/caseclosed.jpg">
+                  <div class="titleGenre">
+                     <p class="title">Case Closed</p>
+                     <p class="genre">Animation, Mystery, <br>Thriller</p>
+                  </div>
+                  <div class="nowShowBtn"> 
+                     <a class="detailBtn" href="">Details</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="joinMember">
+            <p style="color: #4E4B66; font-family: 'Mulish'; font-size: 14px; margin-top: 10%;">Be the vanguard of the</p>
+            <p style="color: #5F2EEA; font-family: 'Mulish'; font-size: 32px; font-weight: 700; line-height: 1;">Moviegoers</p>
+            <div class="inputAndJoin" style="margin-top: 15%;">
+               <div class="borderInput"><input class="input" type="email" id="email" placeholder="Write your email"></div>
+               <a class="bookBtn" style="align-items: center; display: flex; height: 46px; margin: 0; justify-content: center; width: 100%;" href="">Join Now</a>
+            </div>
+            <div style="color: #6E7191; font-family: 'Mulish'; font-size: 12px; margin-top: 15%; text-align: center;">
+               <p>By joining you as a Tickitz member,</p>
+               <p style="line-height: 2;">we will always send you the</p>
+               <p>latest updates via email.</p>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <img src="files/tickitz.png" style="height: 30px; margin: 5% 0; width: 120px;">
+         <div class="footerText">
+            <p>Stop waiting in line. Buy tickets
+               <br>conveniently, watch movies quietly.
+            </p>
+            <p style="color: black; font-size: 16px; margin: 15% 0 5% 0;">Explore</p>
+            <div class="footerRowText">
+               <a href="" style="color: #6E7191;">Cinemas</a>
+               <a href="" style="color: #6E7191;">Movies list</a>
+               <a href="" style="color: #6E7191;">Notification</a>
+            </div>
+            <a href="" style="color: #6E7191;">My Ticket</a>
+            <p style="color: black; font-size: 16px; margin: 20% 0 5% 0;">Our Sponsor</p>
+            <div class="ourSponsor">
+               <img src="files/footer/ebu.png">
+               <img src="files/footer/cineone.png">
+               <img src="files/footer/hiflix.png">
+            </div>
+            <p style="color: black; font-size: 16px; margin: 5% 0;">Follow Us</p>
+            <div class="followUs">
+               <img style="margin: 3% 5% 3% 0; width: 12px;" class="followUsLogo" src="files/footer/facebook.png">
+               <img class="followUsLogo" src="files/footer/instagram.png">
+               <img class="followUsLogo" src="files/footer/twitter.png">
+               <img style="width: 22px;" class="followUsLogo" src="files/footer/youtube.png">
+            </div>
+            <p style="font-size: 12px; letter-spacing: 0.75px; margin: 25% 0;">&#169; 2020 Tickitz. All Rights Reserved.</p>
+         </div>
+      </div>
+   </div>
+   <script>
+      function showNavMobile(){
+         showState = document.getElementById("insideNavMobile")
+         if(showState.style.display == "none") {showState.style.display = "block"}
+         else {showState.style.display = "none"}
+      }
+      function showLocation(){
+         showState = document.getElementById("insideLocation")
+         if(showState.style.display == "none") {showState.style.display = "block"}
+         else{showState.style.display = "none"}
+      }
+      function showMovie1Desktop(){
+         showState = document.getElementById("movie1Desktop")
+         previewState = document.getElementById("preview1Desktop")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie2Desktop(){
+         showState = document.getElementById("movie2Desktop")
+         previewState = document.getElementById("preview2Desktop")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie3Desktop(){
+         showState = document.getElementById("movie3Desktop")
+         previewState = document.getElementById("preview3Desktop")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie4Desktop(){
+         showState = document.getElementById("movie4Desktop")
+         previewState = document.getElementById("preview4Desktop")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie5Desktop(){
+         showState = document.getElementById("movie5Desktop")
+         previewState = document.getElementById("preview5Desktop")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie6Desktop(){
+         showState = document.getElementById("movie6Desktop")
+         previewState = document.getElementById("preview6Desktop")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie1(){
+         showState = document.getElementById("movie1")
+         previewState = document.getElementById("preview1")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie2(){
+         showState = document.getElementById("movie2")
+         previewState = document.getElementById("preview2")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie3(){
+         showState = document.getElementById("movie3")
+         previewState = document.getElementById("preview3")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie4(){
+         showState = document.getElementById("movie4")
+         previewState = document.getElementById("preview4")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie5(){
+         showState = document.getElementById("movie5")
+         previewState = document.getElementById("preview5")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+      function showMovie6(){
+         showState = document.getElementById("movie6")
+         previewState = document.getElementById("preview6")
+         if(showState.style.display == "none") {
+            showState.style.display = "block"
+            previewState.style.display = "none"
+         }
+         else{
+            showState.style.display = "none"
+            previewState.style.display = "block"
+         }
+      }
+   </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
