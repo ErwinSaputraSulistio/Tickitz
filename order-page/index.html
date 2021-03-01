@@ -1,0 +1,409 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <link rel="stylesheet" href="order page.css">
+   <title>Tickitz - Order Page</title>
+</head>
+<body>
+   <!-- DESKTOP -->
+   <div id="desktop">
+      <div class="navHome">
+         <div class="col-md-6" style="margin-left: 5%; padding: 1%;">
+            <img src="files/tickitz.png" style="width: 6vw;">
+            <div class="navGroup">
+               <a class="navBtn" href="">Movies</a>
+               <a class="navBtn" href="">Cinemas</a>
+               <a class="navBtn" href="">Buy Ticket</a>
+            </div>
+         </div>
+         <div class="col-md-3 offset-md-2">
+            <div class="navGroup" style="width: 100%;">
+               <div class="dropdown">
+                  <button class="navBtn navLocBtn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 0.9vw; height: 3.5vw;">
+                    Location
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Jabodetabek</a>
+                    <a class="dropdown-item" href="#">Other</a>
+                  </div>
+               </div>
+               <img src="files/search_logo.png" style="height: 1vw; width: 1vw; filter: brightness(50%)">
+               <img src="files/profile.png" style="width: 2.2vw">
+            </div>
+         </div>
+      </div>
+      <div class="orderPage container-fluid" style="background: #F5F6F8; display: flex; flex-direction: row; justify-content: space-between; height: auto; padding: 2% 6%;">
+         <div class="rowOne" style="display: flex; flex-direction: column; height: 100%; width: 72%;">
+            <p class="textOrder">Movie Selected</p>
+            <div class="hoverShadow" style="align-items: center; background: white; border-radius: 0.5vw; display: flex; flex-direction: row; height: 5vw; justify-content: space-between; margin-bottom: 1.5vw; padding: 3 5%; width: 100%;">
+               <p style="font-family: 'Mulish'; font-size: 1.3vw;">Spider-Man : Homecoming</p>
+               <a class="changeMovie" href="">Change Movie</a>
+            </div>
+            <p class="textOrder">Choose Your Seat</p>
+            <div class="hoverShadow orderInfo" style="height: auto; padding: 12.5%;">
+               <div style="font-family: 'Mulish'; font-size: 1.5vw; margin-left: 5%; padding-bottom: 3%; text-align: center;">Screen</div>
+               <div style="float: right;">
+                  <div style="border: 0.3vw solid #5F2EEA; border-radius: 1vw; float: right; margin-bottom: 5%; width: 94%;"></div>
+               </div>
+               <div class="seatPosition">
+                  <img src="files/seatLeft.png" style="height: 22vw; width: 22vw;">
+                  <img src="files/seatRight.png" style="height: 22vw; width: 20vw;">
+               </div>
+               <div style="display: flex; flex-direction: column;">
+                  <p class="textOrder" style="margin: 10% 0 5% 0;">Seating key</p>
+                  <div style="align-items: center; display: flex; flex-direction: row; justify-content: center; width: 100%;">
+                     <div style="background: #D6D8E7; border-radius: 0.3vw; height: 2.2vw; width: 2.2vw;"></div>
+                     <p style="color: #4E4B66; font-family: 'Mulish'; font-size: 1.2vw; margin-left: 3%; margin-right: 7%;">Available</p>
+                     <div style="background: #5F2EEA; border-radius: 0.3vw; height: 2.2vw; width: 2.2vw;"></div>
+                     <p style="color: #4E4B66; font-family: 'Mulish'; font-size: 1.2vw; margin-left: 3%; margin-right: 7%;">Selected</p>
+                     <div style="background: #F589D7; border-radius: 0.3vw; height: 2.2vw; width: 2.2vw;"></div>
+                     <p style="color: #4E4B66; font-family: 'Mulish'; font-size: 1.2vw; margin-left: 3%; margin-right: 7%;">Love Nest</p>
+                     <div style="background: #6E7191; border-radius: 0.3vw; height: 2.2vw; width: 2.2vw;"></div>
+                     <p style="color: #4E4B66; font-family: 'Mulish'; font-size: 1.2vw; margin-left: 3%;">Sold</p>
+                  </div>
+               </div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 5% 0 7% 0; width: 100%;">
+               <a class="btnBottomOrder" href="" style="border: 0.1vw solid #5F2EEA; color: #5F2EEA;">Change your movie</a>
+               <a class="btnBottomOrder" href="" style="background-color: #5F2EEA; box-shadow: 0.1vw 0.3vw 1vw #b79cfc; color: white;">Checkout now</a>
+            </div>
+         </div>
+         <div class="rowTwo" style="display: flex; flex-direction: column; height: 100%; width: 26%;">
+            <p class="textOrder">Order Info</p>
+            <div class="hoverShadow orderInfo">
+               <div class="cinemaInfo">
+                  <div class="titleCinema">
+                     <img src="files/footer/cineone.png" style="height: 1.5vw; margin-bottom: 3%; width: 9vw;">
+                     <p style="font-family: 'Mulish'; font-size: 1.5vw; letter-spacing: 0.75px;">CineOne21 Cinema</p>
+                  </div>
+                  <div>
+                     <div class="insideOrderInfo">
+                        <p class="greyColor textInsideOrderInfo">Movie selected</p>
+                        <p class="textInsideOrderInfo">Spider-Man : Homecoming</p>
+                     </div>
+                     <div class="insideOrderInfo">
+                        <p class="greyColor textInsideOrderInfo">Tuesday, 07 July 2020</p>
+                        <p class="textInsideOrderInfo">02:00pm</p>
+                     </div>
+                     <div class="insideOrderInfo">
+                        <p class="greyColor textInsideOrderInfo">One ticket price</p>
+                        <p class="textInsideOrderInfo">$10</p>
+                     </div>
+                     <div class="insideOrderInfo">
+                        <p class="greyColor textInsideOrderInfo">Seat choosed</p>
+                        <p class="textInsideOrderInfo">C4, C5, C6</p>
+                     </div>
+                  </div>
+               </div>
+               <div style="border-top: 0.5px solid #DEDEDE; width: 100%;"></div>
+               <div class="totalPayment">
+                  <p style="font-family: 'Mulish'; font-size: 1vw; letter-spacing: 0.75px;">Total Payment</p>
+                  <p style="color: #5F2EEA; font-family: 'Mulish'; font-size: 1.3vw; font-weight: 700; letter-spacing: 0.75px;">$30</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <footer style="height: auto; margin: auto; width: 80%;">
+         <div style="display: flex; flex-direction: column;">
+            <img src="files/tickitz.png" style="height: 3vw; margin-bottom: 15%; width: 12vw">
+            <div style="margin-bottom: 1%;">Stop waiting in line. Buy tickets</div>
+            <div>conveniently, watch movies quietly.</div>
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Explore</p>
+            <p>Cinemas</p>
+            <p>Movies List</p>
+            <p>My Ticket</p>
+            <p>Notification</p>
+            <p></p>
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Our Sponsor</p>
+            <img src="files/footer/ebu.png" style="height: 2.5vw; width: 7.5vw;">
+            <img src="files/footer/cineone.png" style="height: 2vw; width: 9vw;">
+            <img src="files/footer/hiflix.png" style="height: 1.5vw; width: 4.5vw;">
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Follow Us</p>
+            <div class="followUsFlex">
+               <img src="files/footer/facebook.png" style="height: 1.3vw; width: 1vw;">
+               <p style="margin-left: 1vw;">Tickitz Cinema ID</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/instagram.png" style="height: 1vw; width: 1vw;">
+               <p style="margin-left: 1vw;">@tickitz.id</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/twitter.png" style="height: 0.9vw; width: 1vw;">
+               <p style="margin-left: 1vw;">@tickitz.id</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/youtube.png" style="height: 0.7vw; width: 1vw;">
+               <p style="margin-left: 1vw;">Tickitz Cinema ID</p>
+            </div>
+         </div>
+      </footer>
+      <div style="color: #4E4B66; font-family: 'Mulish'; font-size: 0.8vw; margin: 3%; text-align: center;">&#169; 2020 Tickitz. All Rights Reserved.</div>
+   </div>
+
+   <!-- MOBILE -->
+   <div id="mobile" style="height: auto; overflow: visible;">
+      <div class="navbarMobile">
+         <div class="topNavMobile">
+            <img src="files/tickitz.png" style="height: 5vw; width: 20vw;">
+            <img class="btnShowNav" src="files/navMobile.png" style="height: 5vw; float: right; width: 5vw;" onclick="showNavMobile();">
+         </div>
+         <div id="insideNavMobile" style="display: none;">
+               <div style="border-bottom: 0.1vw solid #DEDEDE;">
+                  <div class="searchNavMobile">
+                     <img src="files/search_logo.png" style="filter: brightness(50%); margin: 3%; width: 5vw;">
+                     <input class="inputSearch" type="text" placeholder="Search ...">
+                  </div>
+               </div>
+               <div class="navButton" onclick="showLocation()">
+                  <a class="navShowLocation">Location<img src="files/arrow.png" style="margin-left: 3%; width: 3vw;"></a>
+               </div>
+            <div id="insideLocation" style="display: none;">
+               <div style="display: flex; justify-content:space-evenly;">
+                  <a class="navButton" href="" style="border-right: 0.1vw solid #DEDEDE; width: 50%;">Jabodetabek</a>
+                  <a class="navButton" href="" style="width: 50%;">Other</a>
+               </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+               <a class="navButton" href="">Movies</a>
+               <a class="navButton" href="">Cinemas</a>
+               <a class="navButton" href="">Buy Ticket</a>
+            </div>
+            <div class="allRightsReserved">&#169; 2020 Tickitz. All Rights Reserved.</div>
+         </div>
+      </div>
+      <div class="orderPage">
+         <p class="textOrder" style="margin: 3% 0 16px 0;">Choose Your Seat</p>
+         <div style="background: white; height: 424px; border-radius: 8px; padding: 50px 16px 0 8px;">
+            <div class="orderInfo" style="height: auto;">
+               <div style="background: #5F2EEA; border-radius: 3px; height: 4px; margin-bottom: 16px; margin-left: 8px; width: 280px;"></div>
+               <div style="display: flex; flex-direction: row;">
+                  <div style="background: #00BA88; border-radius: 3px; height: 134px; margin-right: 8px; width: 0.5px;"></div>
+                  <div class="seatPosition">
+                     <img src="files/seatLeftMobile.png" style="height: 133px; width: 133px;">
+                     <img src="files/seatRightMobile.png" style="height: 133px; width: 133px;">
+                  </div>
+               </div>
+               <div style="display: flex; flex-direction: row; justify-content: space-between; margin-left: 8px; width: 280px;">
+                  <div class="redLineBorder"></div>
+                  <div class="redLineBorder"></div>
+               </div>
+               <div style="display: flex; flex-direction: column; margin-left: 8px;">
+                  <p class="textOrder" style="font-size: 14px; font-weight: 400; letter-spacing: 0.75px; margin: 24px 0;">Seating key</p>
+                  <div class="rowSeatingKey">
+                     <img src="files/btmArrow.png" style="height: 20px; width: 20px;">
+                     <p class="fontSeatingKey" style="margin-right: 63px;">A - G</p>
+                     <img src="files/rightArrow.png" style="height: 20px; width: 20px;">
+                     <p class="fontSeatingKey">1 - 14</p>
+                  </div>
+                  <div class="rowSeatingKey" style="margin-top: 16px;">
+                     <div style="background: #D6D8E7; border-radius: 4px; height: 20px; width: 20px;"></div>
+                     <p class="fontSeatingKey" style="margin-right: 40px;">Available</p>
+                     <div style="background: #5F2EEA; border-radius: 4px; height: 20px; width: 20px;"></div>
+                     <p class="fontSeatingKey">Selected</p>
+                  </div>
+                  <div class="rowSeatingKey" style="margin-top: 16px;">
+                     <div style="background: #F589D7; border-radius: 4px; height: 20px; width: 20px;"></div>
+                     <p class="fontSeatingKey" style="margin-right: 38.5px;">Love nest</p>
+                     <div style="background: #6E7191; border-radius: 4px; height: 20px; width: 20px;"></div>
+                     <p class="fontSeatingKey">Sold</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="background: white; height: auto; border-radius: 8px; margin-top: 32px; padding: 24px 16px;">
+            <div class="borderForDropdown">
+               <div class="btn-group">
+                  <button type="button" class="btnSeat alphabetSeatOne btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  A - G
+                  </button>
+                  <ul class="locationSelect dropdown-menu" value="menu">
+                     <li class="dropdown-item" onclick="alphabetSeatOne(this.innerHTML);">A</li>
+                     <li class="dropdown-item" onclick="alphabetSeatOne(this.innerHTML);">B</li>
+                     <li class="dropdown-item" onclick="alphabetSeatOne(this.innerHTML);">C</li>
+                     <li class="dropdown-item" onclick="alphabetSeatOne(this.innerHTML);">D</li>
+                     <li class="dropdown-item" onclick="alphabetSeatOne(this.innerHTML);">E</li>
+                     <li class="dropdown-item" onclick="alphabetSeatOne(this.innerHTML);">F</li>
+                     <li class="dropdown-item" onclick="alphabetSeatOne(this.innerHTML);">G</li>
+                  </ul>
+               </div>
+               <div class="btn-group">
+                  <button type="button" class="btnSeat numberSeatOne btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  1 - 14
+                  </button>
+                  <ul class="locationSelect dropdown-menu" value="menu">
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">1</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">2</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">3</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">4</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">5</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">6</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">7</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">8</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">9</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">10</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">11</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">12</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">13</li>
+                     <li class="dropdown-item" onclick="numberSeatOne(this.innerHTML);">14</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="borderForDropdown" style="margin: 8px 0;">
+               <div class="btn-group">
+                  <button type="button" class="btnSeat alphabetSeatTwo btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  A - G
+                  </button>
+                  <ul class="locationSelect dropdown-menu" value="menu">
+                     <li class="dropdown-item" onclick="alphabetSeatTwo(this.innerHTML);">A</li>
+                     <li class="dropdown-item" onclick="alphabetSeatTwo(this.innerHTML);">B</li>
+                     <li class="dropdown-item" onclick="alphabetSeatTwo(this.innerHTML);">C</li>
+                     <li class="dropdown-item" onclick="alphabetSeatTwo(this.innerHTML);">D</li>
+                     <li class="dropdown-item" onclick="alphabetSeatTwo(this.innerHTML);">E</li>
+                     <li class="dropdown-item" onclick="alphabetSeatTwo(this.innerHTML);">F</li>
+                     <li class="dropdown-item" onclick="alphabetSeatTwo(this.innerHTML);">G</li>
+                  </ul>
+               </div>
+               <div class="btn-group">
+                  <button type="button" class="btnSeat numberSeatTwo btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  1 - 14
+                  </button>
+                  <ul class="locationSelect dropdown-menu" value="menu">
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">1</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">2</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">3</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">4</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">5</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">6</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">7</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">8</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">9</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">10</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">11</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">12</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">13</li>
+                     <li class="dropdown-item" onclick="numberSeatTwo(this.innerHTML);">14</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="borderForDropdown">
+               <div class="btn-group">
+                  <button type="button" class="btnSeat alphabetSeatThree btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  A - G
+                  </button>
+                  <ul class="locationSelect dropdown-menu" value="menu">
+                     <li class="dropdown-item" onclick="alphabetSeatThree(this.innerHTML);">A</li>
+                     <li class="dropdown-item" onclick="alphabetSeatThree(this.innerHTML);">B</li>
+                     <li class="dropdown-item" onclick="alphabetSeatThree(this.innerHTML);">C</li>
+                     <li class="dropdown-item" onclick="alphabetSeatThree(this.innerHTML);">D</li>
+                     <li class="dropdown-item" onclick="alphabetSeatThree(this.innerHTML);">E</li>
+                     <li class="dropdown-item" onclick="alphabetSeatThree(this.innerHTML);">F</li>
+                     <li class="dropdown-item" onclick="alphabetSeatThree(this.innerHTML);">G</li>
+                  </ul>
+               </div>
+               <div class="btn-group">
+                  <button type="button" class="btnSeat numberSeatThree btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  1 - 14
+                  </button>
+                  <ul class="locationSelect dropdown-menu" value="menu">
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">1</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">2</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">3</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">4</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">5</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">6</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">7</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">8</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">9</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">10</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">11</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">12</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">13</li>
+                     <li class="dropdown-item" onclick="numberSeatThree(this.innerHTML);">14</li>
+                  </ul>
+               </div>
+            </div>
+            <a class="addNewSeat" href="">Add new seat</a>
+         </div>
+         <a class="btnBottomOrderMobile" href="">Checkout now</a>
+      </div>
+      <div class="footer">
+         <img src="files/tickitz.png" style="height: 30px; margin: 5% 0; width: 120px;">
+         <div class="footerText">
+            <p>Stop waiting in line. Buy tickets
+               <br>conveniently, watch movies quietly.
+            </p>
+            <p style="color: black; font-size: 16px; margin: 15% 0 5% 0;">Explore</p>
+            <div class="footerRowText">
+               <a href="" style="color: #6E7191;">Cinemas</a>
+               <a href="" style="color: #6E7191;">Movies list</a>
+               <a href="" style="color: #6E7191;">Notification</a>
+            </div>
+            <a href="" style="color: #6E7191;">My Ticket</a>
+            <p style="color: black; font-size: 16px; margin: 20% 0 5% 0;">Our Sponsor</p>
+            <div class="ourSponsor">
+               <img src="files/footer/ebu.png">
+               <img src="files/footer/cineone.png">
+               <img src="files/footer/hiflix.png">
+            </div>
+            <p style="color: black; font-size: 16px; margin: 5% 0;">Follow Us</p>
+            <div class="followUs">
+               <img style="margin: 3% 5% 3% 0; width: 12px;" class="followUsLogo" src="files/footer/facebook.png">
+               <img class="followUsLogo" src="files/footer/instagram.png">
+               <img class="followUsLogo" src="files/footer/twitter.png">
+               <img style="width: 22px;" class="followUsLogo" src="files/footer/youtube.png">
+            </div>
+            <p style="font-size: 12px; letter-spacing: 0.75px; margin: 25% 0;">&#169; 2020 Tickitz. All Rights Reserved.</p>
+         </div>
+      </div>
+   </div>
+   <script>
+      function showNavMobile(){
+         showState = document.getElementById("insideNavMobile")
+         if(showState.style.display == "none") {showState.style.display = "block"}
+         else {showState.style.display = "none"}
+      }
+      function showLocation(){
+         showState = document.getElementById("insideLocation")
+         if(showState.style.display == "none") {showState.style.display = "block"}
+         else{showState.style.display = "none"}
+      }
+      function alphabetSeatOne(val) {
+         takeFromClassName = document.getElementsByClassName("alphabetSeatOne");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function numberSeatOne(val) {
+         takeFromClassName = document.getElementsByClassName("numberSeatOne");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function alphabetSeatTwo(val) {
+         takeFromClassName = document.getElementsByClassName("alphabetSeatTwo");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function numberSeatTwo(val) {
+         takeFromClassName = document.getElementsByClassName("numberSeatTwo");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function alphabetSeatThree(val) {
+         takeFromClassName = document.getElementsByClassName("alphabetSeatThree");
+         takeFromClassName[0].innerHTML = val;
+      }
+      function numberSeatThree(val) {
+         takeFromClassName = document.getElementsByClassName("numberSeatThree");
+         takeFromClassName[0].innerHTML = val;
+      }
+   </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
