@@ -1,0 +1,532 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <link rel="stylesheet" href="movie details.css">
+   <title>Tickitz - Movie Details</title>
+</head>
+<body>
+   <!-- DESKTOP -->
+   <div id="desktop">
+      <div class="navHome">
+         <div class="col-md-6" style="margin-left: 5%; padding: 1%;">
+            <img src="files/tickitz.png" style="width: 6vw;">
+            <div class="navGroup">
+               <a class="navBtn" href="">Movies</a>
+               <a class="navBtn" href="">Cinemas</a>
+               <a class="navBtn" href="">Buy Ticket</a>
+            </div>
+         </div>
+         <div class="col-md-3 offset-md-2">
+            <div class="navGroup" style="width: 100%;">
+               <div class="dropdown">
+                  <button class="navBtn navLocBtn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 0.9vw; height: 3.5vw;">
+                    Location
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Jabodetabek</a>
+                    <a class="dropdown-item" href="#">Other</a>
+                  </div>
+               </div>
+               <img src="files/search_logo.png" style="height: 1vw; width: 1vw; filter: brightness(50%)">
+               <img src="files/profile.png" style="width: 2.2vw">
+            </div>
+         </div>
+      </div>
+      <header>
+         <div class="movieBorder">
+            <img src="files/spiderman.png" style="height: 100%; padding: 10%; width: 100%;">
+         </div>
+         <div class="movieDetails">
+            <div class="movieInfo">
+               <div class="title">
+                  <p class="movieTitle">Spiderman : Homecoming</p>
+                  <p class="movieGenre">Adventure, Action, Sci-Fi</p>
+               </div>
+               <div class="moreInfo">
+                  <div class="rowOne">
+                     <div class="releaseDate">
+                        <p class="fontBase">Release date</p>
+                        <p>June 28, 2017</p>
+                     </div>
+                     <div class="duration">
+                        <p class="fontBase">Duration</p>
+                        <p>2 hours 13 minutes</p>   
+                     </div>
+                  </div>
+                  <div class="rowTwo">
+                     <div class="directedBy">
+                        <p class="fontBase">Directed by</p>
+                        <p>Jon Watss</p>
+                     </div>
+                     <div class="casts">
+                        <p class="fontBase">Casts</p>
+                        <p>Tom Holland, Michael Keaton, Robert Dawney Jr, ...</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="lineBreaks"></div>
+            <div class="movieSynopsis">
+               <p class="synopsis">Synopsis</p>
+               <p class="synopsisText">Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened. </p>
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="showtimesAndTickets container-fluid">
+            <h1 style="font-size: 2vw; font-weight: 700;">Showtimes and Tickets</h1>
+            <div class="twoButtons">
+               <div class="hoverThis btn-group">
+                  <button type="button" class="btnLocation btn" style="background: #EFF0F6; width: 15vw;"><img src="files/calendar.png" style="height: 1vw; margin-right: 10%; width: 1vw;">21/07/20</button>
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #EFF0F6;">
+                  <span class="sr-only"></span>
+                  </button>
+               </div>
+               <div class="btn-group" style="margin-left: 5%;">
+                  <button type="button" class="hoverThis btnLocation locationDropdown btn" style="background: #EFF0F6; padding: 5%; width: 15vw;"><img src="files/location.png" style="height: 1vw; margin-right: 10%; width: 1vw;">Location</button>
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #EFF0F6;">
+                  <span class="sr-only"></span>
+                  </button>
+                  <ul class="locationSelect dropdown-menu" value="menu">
+                     <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Jakarta</li>
+                     <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Bogor</li>
+                     <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Depok</li>
+                     <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Tangerang</li>
+                     <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Bekasi</li>
+                  </ul>
+               </div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%;">
+               <div style="background: white; border-radius: 0.5vw; display: flex; flex-direction: column; height: 22vw; margin: 2vw 0.5vw; padding: 1.5vw; text-align: center; width: 22vw;">
+                  <div style="display: flex; flex-direction: row; justify-content: center;">
+                     <img src="files/footer/ebu.png" style="height: 2.5vw; margin: 1vw 2.5vw 0 1vw; width: 7.5vw;">
+                     <div style="align-items: center; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: black; font-family:'Mulish'; font-size: 1.3vw; text-align: justify; width: 100%;">ebv.id</p>
+                        <p style="color: #AAAAAA; font-family: 'Mulish'; font-size: 0.6vw; letter-spacing: 0.75px; margin-bottom: 1.1vw; text-align: left; width: 100%;">Whatever street No.12, South Purwokerto</p>
+                     </div>
+                  </div>
+                  <div style="border-top: 0.5px solid #DEDEDE; width: 100%;"></div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">09:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">10:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">12:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">13:30am</a></div>
+                  </div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">15:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">16:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">18:00am</a></div>
+                  </div>
+                  <div class="row" style="margin: 2vw 0; width: 100%;">
+                     <div class="col-6"><p class="bookTime" style="float: left; font-size: 0.9vw; letter-spacing: 0.75px;">Price</p></div>
+                     <div class="col-6"><p class="bookTime" style="color: black; float: right; font-size: 0.9vw; font-weight: 600; letter-spacing: 0.75px;">$10.00/seat</p></div>
+                  </div>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 0.5vw 0; width: 100%;">
+                     <a class="bookNowBtn" href="https://www.instagram.com/alegoplex.es/" target="_blank">Book now</a>
+                     <a class="addToCart" href="">Add to cart</a>
+                  </div>
+               </div>
+               <div style="background: white; border-radius: 0.5vw; display: flex; flex-direction: column; height: 22vw; margin: 2vw 0.5vw; padding: 1.5vw; text-align: center; width: 22vw;">
+                  <div style="display: flex; flex-direction: row; justify-content: center;">
+                     <img src="files/footer/cineone.png" style="height: 2vw; margin: 1vw 2.5vw 0 1vw; width: 7.5vw;">
+                     <div style="align-items: center; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: black; font-family:'Mulish'; font-size: 1.3vw; text-align: justify; width: 100%;">CineOne21</p>
+                        <p style="color: #AAAAAA; font-family: 'Mulish'; font-size: 0.6vw; letter-spacing: 0.75px; margin-bottom: 1.1vw; text-align: left; width: 100%;">Downstreet street No.21, East Purwokerto</p>
+                     </div>
+                  </div>
+                  <div style="border-top: 0.5px solid #DEDEDE; width: 100%;"></div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">09:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">10:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">12:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">13:30am</a></div>
+                  </div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">15:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">16:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">18:00am</a></div>
+                  </div>
+                  <div class="row" style="margin: 2vw 0; width: 100%;">
+                     <div class="col-6"><p class="bookTime" style="float: left; font-size: 0.9vw; letter-spacing: 0.75px;">Price</p></div>
+                     <div class="col-6"><p class="bookTime" style="color: black; float: right; font-size: 0.9vw; font-weight: 600; letter-spacing: 0.75px;">$10.00/seat</p></div>
+                  </div>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 0.5vw 0; width: 100%;">
+                     <a class="bookNowBtn" href="https://www.instagram.com/alegoplex.es/" target="_blank">Book now</a>
+                     <a class="addToCart" href="">Add to cart</a>
+                  </div>
+               </div>
+               <div style="background: white; border-radius: 0.5vw; display: flex; flex-direction: column; height: 22vw; margin: 2vw 0.5vw; padding: 1.5vw; text-align: center; width: 22vw;">
+                  <div style="display: flex; flex-direction: row; justify-content: center;">
+                     <img src="files/footer/hiflix.png" style="height: 2.5vw; margin: 1vw 2.5vw 0 1vw; width: 7.5vw;">
+                     <div style="align-items: center; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: black; font-family:'Mulish'; font-size: 1.3vw; text-align: justify; width: 100%;">hiflix Cinema</p>
+                        <p style="color: #AAAAAA; font-family: 'Mulish'; font-size: 0.6vw; letter-spacing: 0.75px; margin-bottom: 1.1vw; text-align: left; width: 100%;">Colonel street No.2, East Purwokerto</p>
+                     </div>
+                  </div>
+                  <div style="border-top: 0.5px solid #DEDEDE; width: 100%;"></div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">09:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">10:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">12:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">13:30am</a></div>
+                  </div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">15:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">16:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">18:00am</a></div>
+                  </div>
+                  <div class="row" style="margin: 2vw 0; width: 100%;">
+                     <div class="col-6"><p class="bookTime" style="float: left; font-size: 0.9vw; letter-spacing: 0.75px;">Price</p></div>
+                     <div class="col-6"><p class="bookTime" style="color: black; float: right; font-size: 0.9vw; font-weight: 600; letter-spacing: 0.75px;">$10.00/seat</p></div>
+                  </div>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 0.5vw 0; width: 100%;">
+                     <a class="bookNowBtn" href="https://www.instagram.com/alegoplex.es/" target="_blank">Book now</a>
+                     <a class="addToCart" href="">Add to cart</a>
+                  </div>
+               </div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%;">
+               <div style="background: white; border-radius: 0.5vw; display: flex; flex-direction: column; height: 22vw; margin: 2vw 0.5vw; padding: 1.5vw; text-align: center; width: 22vw;">
+                  <div style="display: flex; flex-direction: row; justify-content: center;">
+                     <img src="files/footer/ebu.png" style="height: 2.5vw; margin: 1vw 2.5vw 0 1vw; width: 7.5vw;">
+                     <div style="align-items: center; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: black; font-family:'Mulish'; font-size: 1.3vw; text-align: justify; width: 100%;">ebv.id</p>
+                        <p style="color: #AAAAAA; font-family: 'Mulish'; font-size: 0.6vw; letter-spacing: 0.75px; margin-bottom: 1.1vw; text-align: left; width: 100%;">Whatever street No.12, South Purwokerto</p>
+                     </div>
+                  </div>
+                  <div style="border-top: 0.5px solid #DEDEDE; width: 100%;"></div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">09:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">10:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">12:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">13:30am</a></div>
+                  </div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">15:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">16:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">18:00am</a></div>
+                  </div>
+                  <div class="row" style="margin: 2vw 0; width: 100%;">
+                     <div class="col-6"><p class="bookTime" style="float: left; font-size: 0.9vw; letter-spacing: 0.75px;">Price</p></div>
+                     <div class="col-6"><p class="bookTime" style="color: black; float: right; font-size: 0.9vw; font-weight: 600; letter-spacing: 0.75px;">$10.00/seat</p></div>
+                  </div>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 0.5vw 0; width: 100%;">
+                     <a class="bookNowBtn" href="https://www.instagram.com/alegoplex.es/" target="_blank">Book now</a>
+                     <a class="addToCart" href="">Add to cart</a>
+                  </div>
+               </div>
+               <div style="background: white; border-radius: 0.5vw; display: flex; flex-direction: column; height: 22vw; margin: 2vw 0.5vw; padding: 1.5vw; text-align: center; width: 22vw;">
+                  <div style="display: flex; flex-direction: row; justify-content: center;">
+                     <img src="files/footer/cineone.png" style="height: 2vw; margin: 1vw 2.5vw 0 1vw; width: 7.5vw;">
+                     <div style="align-items: center; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: black; font-family:'Mulish'; font-size: 1.3vw; text-align: justify; width: 100%;">CineOne21</p>
+                        <p style="color: #AAAAAA; font-family: 'Mulish'; font-size: 0.6vw; letter-spacing: 0.75px; margin-bottom: 1.1vw; text-align: left; width: 100%;">Downstreet street No.21, East Purwokerto</p>
+                     </div>
+                  </div>
+                  <div style="border-top: 0.5px solid #DEDEDE; width: 100%;"></div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">09:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">10:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">12:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">13:30am</a></div>
+                  </div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">15:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">16:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">18:00am</a></div>
+                  </div>
+                  <div class="row" style="margin: 2vw 0; width: 100%;">
+                     <div class="col-6"><p class="bookTime" style="float: left; font-size: 0.9vw; letter-spacing: 0.75px;">Price</p></div>
+                     <div class="col-6"><p class="bookTime" style="color: black; float: right; font-size: 0.9vw; font-weight: 600; letter-spacing: 0.75px;">$10.00/seat</p></div>
+                  </div>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 0.5vw 0; width: 100%;">
+                     <a class="bookNowBtn" href="https://www.instagram.com/alegoplex.es/" target="_blank">Book now</a>
+                     <a class="addToCart" href="">Add to cart</a>
+                  </div>
+               </div>
+               <div style="background: white; border-radius: 0.5vw; display: flex; flex-direction: column; height: 22vw; margin: 2vw 0.5vw; padding: 1.5vw; text-align: center; width: 22vw;">
+                  <div style="display: flex; flex-direction: row; justify-content: center;">
+                     <img src="files/footer/hiflix.png" style="height: 2.5vw; margin: 1vw 2.5vw 0 1vw; width: 7.5vw;">
+                     <div style="align-items: center; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: black; font-family:'Mulish'; font-size: 1.3vw; text-align: justify; width: 100%;">hiflix Cinema</p>
+                        <p style="color: #AAAAAA; font-family: 'Mulish'; font-size: 0.6vw; letter-spacing: 0.75px; margin-bottom: 1.1vw; text-align: left; width: 100%;">Colonel street No.2, East Purwokerto</p>
+                     </div>
+                  </div>
+                  <div style="border-top: 0.5px solid #DEDEDE; width: 100%;"></div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">09:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">10:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">12:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">13:30am</a></div>
+                  </div>
+                  <div class="row" style="margin: auto; margin-top: 1vw; width: 100%;">
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">15:00am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">16:30am</a></div>
+                     <div class="col-3"><a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">18:00am</a></div>
+                  </div>
+                  <div class="row" style="margin: 2vw 0; width: 100%;">
+                     <div class="col-6"><p class="bookTime" style="float: left; font-size: 0.9vw; letter-spacing: 0.75px;">Price</p></div>
+                     <div class="col-6"><p class="bookTime" style="color: black; float: right; font-size: 0.9vw; font-weight: 600; letter-spacing: 0.75px;">$10.00/seat</p></div>
+                  </div>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 0.5vw 0; width: 100%;">
+                     <a class="bookNowBtn" href="https://www.instagram.com/alegoplex.es/" target="_blank">Book now</a>
+                     <a class="addToCart" href="">Add to cart</a>
+                  </div>
+               </div>
+            </div>
+            <div style="align-items: center; display: flex; flex-direction: row; justify-content: center; margin-top: 3%; width: 100%;">
+               <div style="border-top: 0.5px solid #DEDEDE; height: 0; width: 35%;"></div>
+               <a style="color: #5F2EEA; font-family:'Mulish'; font-size: 1vw; font-weight: 600; margin: 0 5vw;" href="">view more</a>
+               <div style="border-top: 0.5px solid #DEDEDE; height: 0; width: 35%;"></div>
+            </div>
+         </div>
+      </main>
+      <footer style="height: auto; margin: auto; width: 80%;">
+         <div style="display: flex; flex-direction: column;">
+            <img src="files/tickitz.png" style="height: 3vw; margin-bottom: 15%; width: 12vw">
+            <div style="margin-bottom: 1%;">Stop waiting in line. Buy tickets</div>
+            <div>conveniently, watch movies quietly.</div>
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Explore</p>
+            <p>Cinemas</p>
+            <p>Movies List</p>
+            <p>My Ticket</p>
+            <p>Notification</p>
+            <p></p>
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Our Sponsor</p>
+            <img src="files/footer/ebu.png" style="height: 2.5vw; width: 7.5vw;">
+            <img src="files/footer/cineone.png" style="height: 2vw; width: 9vw;">
+            <img src="files/footer/hiflix.png" style="height: 1.5vw; width: 4.5vw;">
+         </div>
+         <div class="footerTextDesktop">
+            <p style="color: black; font-size: 1vw; margin-bottom: 1.5vw;">Follow Us</p>
+            <div class="followUsFlex">
+               <img src="files/footer/facebook.png" style="height: 1.3vw; width: 1vw;">
+               <p style="margin-left: 1vw;">Tickitz Cinema ID</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/instagram.png" style="height: 1vw; width: 1vw;">
+               <p style="margin-left: 1vw;">@tickitz.id</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/twitter.png" style="height: 0.9vw; width: 1vw;">
+               <p style="margin-left: 1vw;">@tickitz.id</p>
+            </div>
+            <div class="followUsFlex">
+               <img src="files/footer/youtube.png" style="height: 0.7vw; width: 1vw;">
+               <p style="margin-left: 1vw;">Tickitz Cinema ID</p>
+            </div>
+         </div>
+      </footer>
+      <div style="color: #4E4B66; font-family: 'Mulish'; font-size: 0.8vw; margin: 3%; text-align: center;">&#169; 2020 Tickitz. All Rights Reserved.</div>
+   </div>
+
+   <!-- MOBILE -->
+   <div id="mobile" style="height: 3000px; overflow: visible;">
+      <div class="navbarMobile">
+         <div class="topNavMobile">
+            <img src="files/tickitz.png" style="height: 5vw; width: 20vw;">
+            <img class="btnShowNav" src="files/navMobile.png" style="height: 5vw; float: right; width: 5vw;" onclick="showNavMobile();">
+         </div>
+         <div id="insideNavMobile" style="display: none;">
+               <div style="border-bottom: 0.1vw solid #DEDEDE;">
+                  <div class="searchNavMobile">
+                     <img src="files/search_logo.png" style="filter: brightness(50%); margin: 3%; width: 5vw;">
+                     <input class="inputSearch" type="text" placeholder="Search ...">
+                  </div>
+               </div>
+               <div class="navButton" onclick="showLocation()">
+                  <a class="navShowLocation">Location<img src="files/arrow.png" style="margin-left: 3%; width: 3vw;"></a>
+               </div>
+            <div id="insideLocation" style="display: none;">
+               <div style="display: flex; justify-content:space-evenly;">
+                  <a class="navButton" href="" style="border-right: 0.1vw solid #DEDEDE; width: 50%;">Jabodetabek</a>
+                  <a class="navButton" href="" style="width: 50%;">Other</a>
+               </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+               <a class="navButton" href="">Movies</a>
+               <a class="navButton" href="">Cinemas</a>
+               <a class="navButton" href="">Buy Ticket</a>
+            </div>
+            <div class="allRightsReserved">&#169; 2020 Tickitz. All Rights Reserved.</div>
+         </div>
+      </div>
+      <div class="header">
+         <div class="movieBorder">
+            <img src="files/spiderman.png" style="height: 100%; padding: 10%; width: 100%;">
+         </div>
+         <div class="movieDetails">
+            <div class="movieInfo">
+               <div class="title">
+                  <p class="movieTitle">Spiderman : Homecoming</p>
+                  <p class="movieGenre">Adventure, Action, Sci-Fi</p>
+               </div>
+               <div class="moreInfo">
+                  <div class="rowOne">
+                     <div class="releaseDate">
+                        <p class="fontBase">Release date</p>
+                        <p>June 28, 2017</p>
+                     </div>
+                     <div class="duration">
+                        <p class="fontBase">Duration</p>
+                        <p>2 hours 13 minutes</p>   
+                     </div>
+                  </div>
+                  <div class="rowTwo">
+                     <div class="directedBy">
+                        <p class="fontBase">Directed by</p>
+                        <p>Jon Watss</p>
+                     </div>
+                     <div class="casts">
+                        <p class="fontBase">Casts</p>
+                        <p>Tom Holland, <br>Robert Dawney Jr, etc</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="lineBreaks"></div>
+            <div class="movieSynopsis">
+               <p class="synopsis">Synopsis</p>
+               <p class="synopsisText">Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened. </p>
+            </div>
+         </div>
+      </div>
+      <div style="align-items: center; display: flex; flex-direction:column; background: #F5F6F8; height: 1130px; padding: 10%;">
+         <p style="font-family: 'Mulish'; font-size: 18px; font-weight: 700; letter-spacing: 0.75px;">Showtimes and Tickets</p>
+         <div class="btn-group" style="margin-top: 10%;">
+            <button type="button" class="btnLocation calendarDropdownMobile btn" style="background: #EFF0F6; font-family:'Mulish'; padding: 5%; width: 222px;"><img src="files/calendar.png" style="float: left; height: 18px; margin-right: 10%; width: 18px;">Set a date</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #EFF0F6;">
+            <span class="sr-only"></span>
+            </button>
+         </div>
+         <div class="btn-group" style="margin-top: 3%;">
+            <button type="button" class="btnLocation locationDropdownMobile btn" style="background: #EFF0F6; font-family:'Mulish'; padding: 5%; width: 222px;"><img src="files/location.png" style="float: left; height: 18px; margin-right: 10%; width: 18px;">Set a location</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #EFF0F6;">
+            <span class="sr-only"></span>
+            </button>
+            <ul class="locationSelect dropdown-menu" value="menu">
+               <li class="dropdown-item" onclick="dropdownMobile(this.innerHTML);">Jakarta</li>
+               <li class="dropdown-item" onclick="dropdownMobile(this.innerHTML);">Bogor</li>
+               <li class="dropdown-item" onclick="dropdownMobile(this.innerHTML);">Depok</li>
+               <li class="dropdown-item" onclick="dropdownMobile(this.innerHTML);">Tangerang</li>
+               <li class="dropdown-item" onclick="dropdownMobile(this.innerHTML);">Bekasi</li>
+            </ul>
+         </div>
+         <div style="align-items: center; background: white; border-radius: 8px; display: flex; flex-direction: column; height: 353px; margin-top: 48px; padding: 25px; text-align: center; width: 100%;">
+            <img src="files/footer/ebu.png" style="height: 28px; margin-bottom: 12px; width: 76px;">
+            <p style="color: #AAAAAA; font-family: 'Mulish'; font-size: 13px; letter-spacing: 0.75px; margin-bottom: 23px;">Whatever street No.12, South Purwokerto</p>
+            <div style="border-top: 0.5px solid #DEDEDE; width: 234px;"></div>
+            <div style="display: flex; flex-direction: row; margin-top: 16px;">
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">09:00am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">10:30am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">12:00am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">13:30am</a>
+            </div>
+            <div style="display: flex; flex-direction: row; margin-top: 16px;">
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">15:00am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">16:30am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">18:00am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">20:00am</a>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 24px 0; width: 235px;">
+               <p class="bookTime" style="float: left; font-size: 14px; letter-spacing: 0.75px;">Price</p>
+               <p class="bookTime" style="color: black; float: right; font-size: 14px; font-weight: 600; letter-spacing: 0.75px;">$10.00/seat</p>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 24px 0; width: 235px;">
+               <a class="bookNowBtn" href="https://www.instagram.com/alegoplex.es/" target="_blank">Book now</a>
+               <a class="addToCart" href="">Add to cart</a>
+            </div>
+         </div>
+         <div style="align-items: center; background: white; border-radius: 8px; display: flex; flex-direction: column; height: 353px; margin-top: 48px; padding: 25px; text-align: center; width: 100%;">
+            <img src="files/footer/hiflix.png" style="height: 28px; margin-bottom: 12px; width: 76px;">
+            <p style="color: #AAAAAA; font-family: 'Mulish'; font-size: 13px; letter-spacing: 0.75px; margin-bottom: 23px;">Whatever street No.10, East Bekasi</p>
+            <div style="border-top: 0.5px solid #DEDEDE; width: 234px;"></div>
+            <div style="display: flex; flex-direction: row; margin-top: 16px;">
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">09:00am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">10:30am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">12:00am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">13:30am</a>
+            </div>
+            <div style="display: flex; flex-direction: row; margin-top: 16px;">
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">15:00am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">16:30am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">18:00am</a>
+               <a class="bookTime" href="https://www.instagram.com/alegoplex.es/" target="_blank">20:00am</a>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 24px 0; width: 235px;">
+               <p class="bookTime" style="float: left; font-size: 14px; letter-spacing: 0.75px;">Price</p>
+               <p class="bookTime" style="color: black; float: right; font-size: 14px; font-weight: 600; letter-spacing: 0.75px;">$10.00/seat</p>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 24px 0; width: 235px;">
+               <a class="bookNowBtn" href="https://www.instagram.com/alegoplex.es/" target="_blank">Book now</a>
+               <a class="addToCart" href="">Add to cart</a>
+            </div>
+         </div>
+         <div style="align-items: center; display: flex; flex-direction: row; justify-content: center; margin: 48px 0;">
+            <div style="border-top: 0.5px solid #DEDEDE; height: 0; width: 90px;"></div>
+            <a style="color: #5F2EEA; font-family:'Mulish'; font-size: 14px; font-weight: 600; margin: 0 18px;" href="">view more</a>
+            <div style="border-top: 0.5px solid #DEDEDE; height: 0; width: 90px;"></div>
+         </div>
+      </div>
+      <div class="footer">
+         <img src="files/tickitz.png" style="height: 30px; margin: 5% 0; width: 120px;">
+         <div class="footerText">
+            <p>Stop waiting in line. Buy tickets
+               <br>conveniently, watch movies quietly.
+            </p>
+            <p style="color: black; font-size: 16px; margin: 15% 0 5% 0;">Explore</p>
+            <div class="footerRowText">
+               <a href="" style="color: #6E7191;">Cinemas</a>
+               <a href="" style="color: #6E7191;">Movies list</a>
+               <a href="" style="color: #6E7191;">Notification</a>
+            </div>
+            <a href="" style="color: #6E7191;">My Ticket</a>
+            <p style="color: black; font-size: 16px; margin: 20% 0 5% 0;">Our Sponsor</p>
+            <div class="ourSponsor">
+               <img src="files/footer/ebu.png">
+               <img src="files/footer/cineone.png">
+               <img src="files/footer/hiflix.png">
+            </div>
+            <p style="color: black; font-size: 16px; margin: 5% 0;">Follow Us</p>
+            <div class="followUs">
+               <img style="margin: 3% 5% 3% 0; width: 12px;" class="followUsLogo" src="files/footer/facebook.png">
+               <img class="followUsLogo" src="files/footer/instagram.png">
+               <img class="followUsLogo" src="files/footer/twitter.png">
+               <img style="width: 22px;" class="followUsLogo" src="files/footer/youtube.png">
+            </div>
+            <p style="font-size: 12px; letter-spacing: 0.75px; margin: 25% 0;">&#169; 2020 Tickitz. All Rights Reserved.</p>
+         </div>
+      </div>
+   </div>
+   <script>
+      function showNavMobile(){
+         showState = document.getElementById("insideNavMobile")
+         if(showState.style.display == "none") {showState.style.display = "block"}
+         else {showState.style.display = "none"}
+      }
+      function showLocation(){
+         showState = document.getElementById("insideLocation")
+         if(showState.style.display == "none") {showState.style.display = "block"}
+         else{showState.style.display = "none"}
+      }
+      function dropdown(val) {
+         takeFromClassName = document.getElementsByClassName("locationDropdown");
+         takeFromClassName[0].innerHTML = '<img src="files/location.png" style="height: 1vw; margin-right: 10%; width: 1vw;">' + val;
+      }
+      function dropdownMobile(val) {
+         takeFromClassName = document.getElementsByClassName("locationDropdownMobile");
+         takeFromClassName[0].innerHTML = '<img src="files/location.png" style="float: left; height: 18px; margin-right: 10%; width: 18px;">' + val;
+      }
+   </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

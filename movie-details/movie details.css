@@ -1,0 +1,198 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Mulish");
+a:link {text-decoration: none;}
+a {color: black;}
+p {margin: 0; padding: 0;}
+body {animation: showOpacity 1s;}
+@keyframes showOpacity{from{opacity: 0;} to{opacity: 1;}}
+#mobile{display: none;}
+.navHome{
+   align-items: center;
+   background-color: white;
+   display: flex;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+.navGroup{
+   align-items: center;
+   display: inline-flex;
+   font-family: "Mulish";
+   font-size: 0.9vw;
+   justify-content: space-evenly;
+   margin-left: 10%;
+   width: 50%;
+}
+.navBtn{color: black;}
+.navLocBtn:focus {box-shadow: none;}
+.signInBtn{
+   background-color: #5F2EEA;
+   border-radius: 5px;
+   color: white;
+   height: 2.2vw;
+   padding: 2%;
+   text-align: center;
+   width: 6.6vw;
+}
+.signInBtn:hover {color:white; opacity: 0.5;}
+header{
+   display: flex;
+   flex-direction: row;
+   height: 50vw;
+   justify-content: center;
+   padding: 5% 0;
+   width: 100%;
+}
+footer{
+   color: #6E7191;
+   display: flex;
+   flex-direction: row;
+   font-family: "Mulish";
+   font-size: 1vw;
+   letter-spacing: 0.05vw;
+   padding: 5% 5% 0 5%;
+}
+.footerTextDesktop {display: flex; flex-direction: column; margin-left: 13%;}
+.footerTextDesktop p {font-size: 0.8vw;margin: 0.33vw 0;}
+.footerTextDesktop img {margin: 5% 0;}
+.followUsFlex {display: flex; flex-direction: row; margin: 2% 0; width: 10vw;}
+
+/* MOBILE - NAVBAR */
+.navbarMobile{
+   background-color: white;
+   padding-top: 1%;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+.topNavMobile {background-color: white; padding: 7%;}
+.btnShowNav:hover {cursor: pointer; opacity: 0.5;}
+.btmBorder {border-bottom: 0.1vw solid #DEDEDE;}
+.searchNavMobile{
+   border: 0.1vw solid #DEDEDE; 
+   border-radius: 1vw; 
+   padding: 1%; 
+   margin: 5% 5% 10% 5%;}
+.inputSearch{
+   border: none; 
+   color: #A0A3BD; 
+   font-family: "Mulish";}
+.inputSearch:focus {color: black; outline: none;}
+.navButton{
+   border-bottom: 0.1vw solid #DEDEDE;
+   font-family:"Mulish";
+   text-align: center; 
+   padding: 5%;}
+.navButton:hover {background-color: #DEDEDE; cursor: pointer;}
+.allRightsReserved {padding: 15% 5% 10% 5%; text-align: center;}
+
+/* MOBILE - HEADER */
+
+/* MOBILE - FOOTER */
+.footer{
+   display: flex;
+   flex-direction: column;
+   height: 700px;
+   padding: 15% 7% 7% 7%;
+   width: 350px;
+}
+.footerText{
+   color: #6E7191;
+   font-family: "Mulish";
+   font-size: 14px;
+   margin: 5% 0;
+}
+.footerRowText{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 5% 0;
+}
+.ourSponsor{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 3% 0 11% 0;
+}
+.followUsLogo{
+   height: 18px;
+   margin: 3% 6%;
+   width: 18px;
+}
+
+/* MOVIE DETAILS */
+
+.movieBorder {background: white; border: 1px solid #DEDEDE; border-radius: 1vw;}
+.movieDetails {display: flex; flex-direction: column; font-family: "Mulish";}
+.moreInfo {display: flex; flex-direction: row;}
+.rowOne, .rowTwo {display: flex; flex-direction: column;}
+.showtimesAndTickets {background: #F5F6F8; font-family: "Mulish"}
+
+/* MOBILE */
+@media (max-width: 1000px){
+   #mobile {display: block;}
+   #desktop {display: none;}
+   .header {background: #FCFDFE; padding: 10% 0;}
+   .movieTitle {font-size: 20px; font-weight: 700;}
+   .movieGenre {color: #4E4B66; font-size: 16px;}
+   .movieBorder {height: 333px; margin: auto; padding: 3%; width: 222px;}
+   .movieDetails {font-size: 16px;}
+   .rowOne, .rowTwo {margin: 7% 10% 3% 0; width: 50%;}
+   .duration, .casts {margin: 5vw 0;}
+   .fontBase {color: #8692A6; font-size: 12px;}
+   .lineBreaks {border: 0.5px solid #D6D8E7; margin: auto; width: 80%;}
+   .movieSynopsis {padding: 5% 10%;}
+   .synopsis {font-size: 16px; font-weight: 600; margin: 3.3% 0;}
+   .synopsisText {font-size: 12px; line-height: 32px; letter-spacing: 0.75px;}
+   .title {margin-top: 5%; text-align: center;}
+   .moreInfo {padding-left: 10%;}
+   .bookTime {color: #A0A3BD; font-family:"Mulish"; font-size: 12px; margin: 0 5.5px;}
+   .bookTime:focus {color: black; outline: none;}
+   .bookNowBtn, .addToCart {
+      align-items: center; 
+      border-radius: 4px; 
+      display: flex; 
+      font-family: "Mulish"; 
+      font-size: 14px; 
+      font-weight: 700;
+      justify-content: center; 
+      letter-spacing: 0.75px;}
+   .bookNowBtn {background: #5F2EEA; color: white; height: 40px; width: 120px;}
+   .bookNowBtn:focus {box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);}
+   .addtoCart {color: #5F2EEA; width: 100px;}
+}
+
+/* DESKTOP */
+@media (min-width: 1001px){
+   .movieTitle {font-size: 2.2vw; font-weight: 700;}
+   .movieGenre {color: #4E4B66; font-size: 1.2vw;}
+   .movieBorder {height: 33vw; margin: 0 5% 0 0; width: 22vw;}
+   .movieDetails {height: 660px; width: 60vw; font-size: 1.1vw;}
+   .rowOne, .rowTwo {margin: 5% 3% 3% 0;}
+   .rowTwo {margin-left: 8%;}
+   .duration, .casts {margin: 1vw 0;}
+   .fontBase {color: #8692A6; font-size: 1vw;}
+   .lineBreaks {border: 1px solid #DEDEDE;}
+   .synopsis {font-size: 1.5vw; font-weight: 600; margin: 3.3% 0;}
+   .synopsisText {font-size: 1.2vw; line-height: 2vw; letter-spacing: 0.05vw;}
+   .showtimesAndTickets {
+      align-items: center; 
+      display: flex; 
+      flex-direction: column;
+      height: auto;
+      padding: 5%;
+   }
+   .twoButtons {display: flex; flex-direction: row; justify-content: center; margin: 2% 0;}
+   .locationSelect li:hover {cursor: pointer; opacity: 0.5;}
+   .btnLocation {align-items: center; display: flex; flex-direction: row;}
+   .bookTime {color: #A0A3BD; font-family:"Mulish"; font-size: 0.8vw; justify-content: space-between;}
+   .bookTime:focus {color: black; outline: none;}
+   .bookNowBtn, .addToCart {align-items: center; border-radius: 0.3vw; display: flex; font-weight: 600; justify-content: center; letter-spacing: 0.75px;}
+   .bookNowBtn {background: #5F2EEA; color: white; font-size: 0.9vw; height: 2.5vw; width: 7.5vw;}
+   .bookNowBtn:focus {box-shadow: 0px 0.5vw 1.5vw rgba(95, 46, 234, 0.24); outline: none;}
+   .bookNowBtn:hover {color: white;}
+   .bookNowBtn:hover, .addToCart:hover, .hoverThis:hover {opacity: 0.5;}
+   .addToCart {color: #5F2EEA; font-size: 0.9vw; width: 7.5vw;}
+}
